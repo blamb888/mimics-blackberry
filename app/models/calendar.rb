@@ -1,6 +1,6 @@
 class Calendar < ApplicationRecord
   belongs_to :user
-  has_many :users
+  has_many :users, through: :user_calendars
   has_many :events
 
   validates :start_day, presence: true
