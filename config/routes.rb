@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :calendars do
     resources :events, only: [:new, :create]
   end
-  resourcs :events, only: [:edit, :update, :destroy]
+  resources :events, only: [:edit, :update, :destroy]
 end
