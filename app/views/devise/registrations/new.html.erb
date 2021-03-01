@@ -1,11 +1,11 @@
-<div class="container" style="width: 450px; background-color: transparent;">
-  <div class="card my-5 p-3" style="background-color: #40566F; color: white">
+<div class="container" style="width: 450px; background-color: transparent; ">
+  <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
     <div class="row justify-content-center">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2><strong>Sign up</strong></h2>
         <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= f.error_notification %>
-          <div class="form-inputs">
+          <div class="form-inputs mt-1">
             <%= f.input :email,
                 required: false,
                 autofocus: true,
@@ -18,19 +18,22 @@
                 required: false,
                 input_html: { autocomplete: "new-password" } %>
           </div>
-          <div class="col">
-            <a href="#" class="fb btn">
-              <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-            </a>
-            <a href="#" class="twitter btn">
-              <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-            </a>
-            <a href="#" class="google btn">
-              <i class="fa fa-google fa-fw"></i> Login with Google+
-            </a>
-          </div>
           <div class="form-actions">
             <%= f.button :submit, "Sign up", style: "color: white" %>
+          </div>
+          <div class="text-center" style= "line-height: 0px;">
+            <hr/><span class="">or</span><hr/>
+          </div>
+          <div class="">
+            <a href="#" class="fb btn">
+              <i class="fab fa-facebook-f mr-3"></i> Sign up with Facebook
+            </a>
+            <a href="#" class="twitter btn">
+              <i class="fab fa-twitter mr-3" style="padding-left: 0px;"></i> Sign up with Twitter
+            </a>
+            <a href="#" class="google btn mb-3">
+              <i class="fab fa-google mr-3"></i> Sign up with Google+
+            </a>
           </div>
         <% end %>
         <%= render "devise/shared/links" %>
