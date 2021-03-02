@@ -33,12 +33,21 @@ calendar = Calendar.new({
 calendar.user = user
 calendar.save
 
-event = Event.new({
+pancake = Event.new({
   name: "pancake day",
   category: "holiday",
   day_number: 10
 })
-event.calendar = calendar
-event.user = user
-event.save
+pancake.calendar = calendar
+pancake.user = user
+pancake.save
+
+rebirth = Event.new({
+  name: "rebirth eve",
+  category: "holiday",
+  day_number: 69
+})
+rebirth.calendar = calendar
+rebirth.user = user
+rebirth.save
 puts("SEED COMPLETE")
