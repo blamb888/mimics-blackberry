@@ -1,15 +1,16 @@
 class CalendarsController < ApplicationController
   before_action :find_calendar, only: [:show]
 
-  authorize @calendar
+  #authorize @calendar
 
   def index
     @calendars = policy_scope(Calendar).order(created_at: :desc)
+  end
 
   
 
   def show
-    authorize @calendar
+    #authorize @calendar
   end
 
 
