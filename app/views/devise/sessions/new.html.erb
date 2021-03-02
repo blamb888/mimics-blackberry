@@ -1,7 +1,7 @@
-<div class="container" style="width: 450px; background-color: transparent;">
-  <div class="card my-5 p-3" style="background-color: #40566F; color: white">
+<div class="container" style="width: 450px; background-color: transparent; ">
+  <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
     <div class="row justify-content-center">
-      <div class="col-12">
+      <div class="col-sm-12">
         <h2><strong>Log in</strong></h2>
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-inputs">
@@ -14,7 +14,7 @@
                 input_html: { autocomplete: "current-password" } %>
             <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
           </div>
-          <div class="form-actions">
+          <div class="form-actions mb-3">
             <%= f.button :submit, "Log in" %>
           </div>
         <% end %>
