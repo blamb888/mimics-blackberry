@@ -1,6 +1,5 @@
 body {
-  background-color: rgb(250,250,250);
-  color: rgb(40,40,40);
+
 }
 
 body, h1, h2, h3, p {
@@ -29,7 +28,7 @@ a {
 
 .page-frame-body {
   flex-grow: 1;
-  overflow: scroll;
+  // overflow: scroll;
 }
 
 .page-frame-footer {
