@@ -10,6 +10,7 @@ class CalendarsController < ApplicationController
 
   def show
     @calendar = Calendar.find(params[:id])
+    @events = Event.where(:calendar_id == @calendar)
   end
 
 
