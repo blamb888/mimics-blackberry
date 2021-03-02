@@ -5,13 +5,19 @@ class CalendarsController < ApplicationController
     authorize @calendar
   end
 
+  def index
+    @calendars = Calendar.all
+  end
+
 
   private
 
   def find_calendar
     @calendar = Calendar.find(params[:id])
+  end
 
   def calendar_params
     params.require(:calendar).permit(:start_day, :start_year, :current_day, :months, :weekdays, :user)
 
+  end
 end
