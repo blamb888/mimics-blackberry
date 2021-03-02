@@ -1,19 +1,26 @@
 class CalendarsController < ApplicationController
   before_action :find_calendar, only: [:show]
-
+  helper_method :find_day_events
 
   def index
     @calendars = policy_scope(Calendar).order(created_at: :desc)
   end
 
-  
-
   def show
     @calendar = Calendar.find(params[:id])
+    @events = Event.where(:calendar_id == @calendar)
   end
 
-  def index
-    @calendars = Calendar.all
+  def find_day_events(events, day)
+    day_events = []
+    events.each do |e|
+      #if event day is the same as day
+      if(e.day_number == day)
+        #add to event array
+        day_events << e
+      end
+    end
+    return day_events
   end
 
   private
@@ -26,7 +33,7 @@ class CalendarsController < ApplicationController
   def calendar_params
     params.require(:calendar).permit(:start_day, :start_year, :current_day, :months, :weekdays, :user)
   end
-
+ 
   def calculate_date(target_day)
     @calendar = Calendar.first
     @sum_of_months = 0
