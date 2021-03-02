@@ -10,6 +10,7 @@ class CalendarsController < ApplicationController
   
 
   def show
+    @calendar = Calendar.find(params[:id])
     # authorize @calendar
   end
 
