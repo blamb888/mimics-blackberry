@@ -17,3 +17,36 @@
 a {
   color: white;
 }
+
+.collapse .navbar-collapse {
+  color: white;
+}
+
+.fa-bell:before {
+   font-size: 24px;
+}
+
+.fa-envelope:before {
+    font-size: 24px;
+}
+
+.fa-bell:hover {
+  color:rgb(117,226,215);
+}
+
+.fa-envelope:hover {
+    color: rgb(117,226,215);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    a {
+      text-decoration: none;
+    }
+}
+
+a.btn.btn-outline-light:hover {
+  text-decoration: none;
+  color: #40566F;
+  background-color: white;
+}
