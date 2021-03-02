@@ -1,0 +1,3 @@
+<% if policy(Calendar).create? %>
+  <%= link_to "New calendar", new_calendar_path %>
+<% end %>
