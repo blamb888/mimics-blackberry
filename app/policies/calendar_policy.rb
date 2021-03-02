@@ -1,6 +1,10 @@
 class CalendarPolicy < ApplicationPolicy
   class Scope < Scope
 
+    def show?
+      record.user == user
+    end
+
     def update?
       record.user == user
       # - record: the calendar passed to the `authorize` method in controller
