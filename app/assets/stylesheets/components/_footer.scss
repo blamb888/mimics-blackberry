@@ -1,0 +1,37 @@
+.footer {
+    background-color: rgb(64,86,111);
+    padding: 50px;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 100%;
+}
+
+.links {
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer a {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+}
+
+.footer a:hover {
+  color: rgb(117,226,215);
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body {
+  flex-grow: 1;
+  overflow: scroll;
+}

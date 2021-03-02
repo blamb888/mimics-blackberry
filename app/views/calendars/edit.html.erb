@@ -1,0 +1,5 @@
+<% @calendars.each do |calendar| %>
+  <% if policy(calendar).edit? %>
+    <%= link_to "Update", edit_calendar_path(calendar) %>
+  <% end %>
+<% end %>
