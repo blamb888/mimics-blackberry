@@ -2,7 +2,7 @@ class CalendarsController < ApplicationController
   before_action :find_calendar, only: [:show]
 
   def show
-    authorize @calendar
+    # authorize @calendar
   end
 
 
