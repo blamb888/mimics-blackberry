@@ -1,0 +1,5 @@
+<% @events.each do |event| %>
+  <% if policy(event).edit? %>
+    <%= link_to "Update", edit_event_path(event) %>
+  <% end %>
+<% end %>
