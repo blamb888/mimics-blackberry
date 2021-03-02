@@ -17,6 +17,20 @@
           <div class="form-actions mb-3">
             <%= f.button :submit, "Log in" %>
           </div>
+          <div class="text-center" style= "line-height: 0px;">
+            <hr/><span class="">or</span><hr/>
+          </div>
+          <div class="">
+            <a href="#" class="fb btn">
+              <i class="fab fa-facebook-f mr-3"></i> Log in with Facebook
+            </a>
+            <a href="#" class="twitter btn">
+              <i class="fab fa-twitter mr-3" style="padding-left: 0px;"></i> Log in with Twitter
+            </a>
+            <a href="#" class="google btn mb-3">
+              <i class="fab fa-google mr-3"></i> Log in with Google+
+            </a>
+          </div>
         <% end %>
         <%= render "devise/shared/links" %>
       </div>
