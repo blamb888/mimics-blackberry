@@ -10,7 +10,7 @@ class CalendarsController < ApplicationController
   
 
   def show
-    #authorize @calendar
+    # authorize @calendar
   end
 
 
