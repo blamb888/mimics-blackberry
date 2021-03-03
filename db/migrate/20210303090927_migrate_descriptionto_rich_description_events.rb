@@ -9,6 +9,7 @@ class MigrateDescriptiontoRichDescriptionEvents < ActiveRecord::Migration[6.1]
     Event.find_each do |event|
       event.update(description: event.rich_description)
       event.update(rich_description: nil)
+    end
   end
 
 end
