@@ -5,4 +5,6 @@
   <% @day_events.each do |event|%>
     <%= render "calendars/event", :event=> event%>
   <% end %>
+  <i class="fas fa-plus-square cursor-pointer" data-toggle="modal" data-target="#event-modal-<%= @day_of_year %>"></i>
+  <%= render 'events/modal', day_of_year: @day_of_year %>
 </div>
