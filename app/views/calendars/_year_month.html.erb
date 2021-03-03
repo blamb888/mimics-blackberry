@@ -1,0 +1,12 @@
+<div> 
+  <h3><%= month[0] %></h3> 
+  <div class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
+    grid-auto-flow: dense; grid-gap: 0px 0px;">
+    <% day_counter = 0%>
+    <% month[1].times do %>
+      <%day_counter += 1%>
+      <% year_day += 1%>
+      <div style=<%year_day == today ? "color:red" : ""%> ><%= year_day%></div>
+    <% end %>
+  </div>
+</div>
