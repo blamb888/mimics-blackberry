@@ -1,8 +1,17 @@
 class EventsController < ApplicationController
+
   def new
-    @event = Event.new(event_params)
+    @event = Event.new
+    authorize @event
   end
 
+  def create
+    @event = Event.new(event_params)
+    @event.user = current_user
+    authorize @event
+    if @event.save
+      redirect_to calendar_path(@calendar)
+  end
 
   private
 
