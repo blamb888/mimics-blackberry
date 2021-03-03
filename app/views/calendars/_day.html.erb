@@ -5,4 +5,5 @@
   <% @day_events.each do |event|%>
     <%= render "calendars/event", :event=> event%>
   <% end %>
+  <%= link_to "+ Event", new_calendar_event %>
 </div>
