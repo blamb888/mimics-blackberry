@@ -1,5 +1,5 @@
 <% if policy(Event).create? %>
-  <%= simple_form_for [@calendar, @event] do |f| %>
+  <%= simple_form_for [@calendar, @event], namespace: "day_#{ @day_of_year }" do |f| %>
     <%= f.input :day_number, as: :hidden, input_html: { value: @day_of_year } %>
     <%= f.input :name, required: true %>
     <div class="form-inputs">
