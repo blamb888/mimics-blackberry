@@ -2,7 +2,7 @@
   <%= simple_form_for [@calendar, @event], namespace: "day_#{ @day_of_year }" do |f| %>
     <%= f.input :day_number, as: :hidden, input_html: { value: @day_of_year } %>
     <%= f.input :name, required: true %>
-    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
     <%= f.rich_text_area :rich_description %>
     <%= f.input :category, required: true, collection: Event::CATEGORIES, include_blank: true, style: "m-1" %>
     <%= f.submit "Add Event", class: "btn btn-primary mb-3"%>
