@@ -13,13 +13,13 @@
   <!-- CYCLE MONTHS -->
   
   <!-- DISPLAY MONTHS IN GRID OF 4 -->
-    <div id="calendar-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
+    <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;  grid-gap: 2px 10px;">
-      <% year_day = 0 %>
-      <% today = 76 %>
+      <% @year_day = 0 %>
+      <% @today = 76 %>
       <% @calendar.months.each do |month|%>
         <%= link_to "#" do %>
-          <%= render "calendars/year_month", :month => month, :year_day => year_day, :today => today %>
+          <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
         <% end %>
       <% end %>
     </div>
