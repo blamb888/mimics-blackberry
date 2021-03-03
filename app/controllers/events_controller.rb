@@ -11,6 +11,9 @@ class EventsController < ApplicationController
     authorize @event
     if @event.save
       redirect_to calendar_path(@calendar)
+    else
+      render :calendar
+    end
   end
 
   private
