@@ -7,6 +7,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(event_params)
+    @event.calendar = calendar
     @event.user = current_user
     authorize @event
     if @event.save
