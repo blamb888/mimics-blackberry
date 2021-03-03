@@ -11,6 +11,24 @@ class CalendarsController < ApplicationController
     @events = Event.where(:calendar_id == @calendar)
   end
 
+  def new
+     @calendars = policy_scope(Calendar)
+    @calendar = Calendar.new
+    authorize @calendar
+  end
+
+  def create
+    @calendar = Calendar.new(calendar_params)
+    @calendar.user == current_user
+    authorize @calendar
+      if @calendar.save
+        redirect_to calendar_path(@calendar)
+      else
+        render :new
+      end
+  end
+
+
   def find_day_events(events, day)
     day_events = []
     events.each do |e|
@@ -33,7 +51,7 @@ class CalendarsController < ApplicationController
   def calendar_params
     params.require(:calendar).permit(:start_day, :start_year, :current_day, :months, :weekdays, :user)
   end
- 
+
   def calculate_date(target_day)
     @calendar = Calendar.first
     @sum_of_months = 0
