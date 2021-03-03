@@ -18,7 +18,7 @@
       <% @year_day = 0 %>
       <% @today = 76 %>
       <% @calendar.months.each.with_index do |month, index|%>
-        <%= link_to show_month_calendar_path(@calendar, :month_id => index, :today => @today) do %>
+        <%= link_to month_view_calendar_path(@calendar, :month_id => index, :today => @today) do %>
           <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
         <% end %>
       <% end %>
