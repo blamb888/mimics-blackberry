@@ -1,0 +1,57 @@
+<div class="container-box d-flex">
+  <div class="col-md-8">
+    <h1 class="row justify-content-center">RECENT GAMES</h1>
+    <div style="float: right; margin-right: 60px; margin-top: 7px;">
+      <div class="calendars">
+        <div class="row justify-content-center">
+          <div class="cards">
+            <% @calendars.each do |calendar| %>
+              <!-- <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.primagames.com/media/images/news/free_dungeons_and_dragons_conten.jpg)">
+              Flamerule
+              <%= link_to "#" %>
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://1.bp.blogspot.com/-BJdETqsudUM/X3UJKKiKv2I/AAAAAAAAROU/hN-fUW_N8rQgXxc3iD8mK8M2tyE-SIHXwCLcBGAsYHQ/w1200-h630-p-k-no-nu/icewinddale%2Bheader.jpg)">
+              Eleasis
+              <%= link_to "#" %>
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.wargamer.com/wp-content/uploads/2021/01/dnd-5e-class-guide-main-image-adventuring-party-closeup-900x507.jpg)">
+              Eleint
+              <%= link_to "#" %>
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGjcmwDQYoXp8IDhb7hDjxEBp_SAtawzUHw&usqp=CAU)">
+              Flamerule
+              <%= link_to "#" %>
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://geekandsundry.com/wp-content/uploads/2019/11/Eberron_ftd.jpg)">
+              Eberron
+              <%= link_to "#" %>
+            </div>
+
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGjcmwDQYoXp8IDhb7hDjxEBp_SAtawzUHw&usqp=CAU)">
+              Googletown
+              <%= link_to "#" %>
+            </div>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://geekandsundry.com/wp-content/uploads/2019/11/Eberron_ftd.jpg)">
+              Eberron
+              <%= link_to "#" %>
+            </div> -->
+              <%= link_to calendar_path(calendar) do %>
+                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://geekandsundry.com/wp-content/uploads/2019/11/Eberron_ftd.jpg)">
+                  Eberron
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="side-options">
+    <div style="float: right; margin-right: 60px; margin-top: 7px;">
+      <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-sm" %>
+      <br>
+      <br>
+      <a href="#" class="btn btn-sm">Join a Game</a>
+    </div>
+  </div>
+</div>

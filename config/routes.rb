@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :calendars do
-    resources :events, only: [:new, :create]
+    resources :events, only: [:create]
+    member do
+      get '/show_month', to: 'calendars#show_month'
+    end
   end
+  resources :events, only: [:edit, :update, :destroy]
 end

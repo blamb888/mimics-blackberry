@@ -1,0 +1,11 @@
+<div style="width: 150px; height: 100px; margin: 0px; border: solid 1px gray; display: inline-block;">
+  <div class="<%= @day_of_year == params[:today] ? "current-day" : "day"%>"><%= counter%></div>
+  <%= @calendar.weekdays.keys[days_of_week_counter].capitalize %>
+  <% @day_events = find_day_events(@events, @day_of_year)%>
+  <% @day_events.each do |event|%>
+    <%= render "calendars/event", :event=> event%>
+    <%= render 'calendars/event-info-modal', event: event %>
+  <% end %>
+  <i class="fas fa-plus-square cursor-pointer" data-toggle="modal" data-target="#event-modal-<%= @day_of_year %>"></i>
+  <%= render 'events/modal', day_of_year: @day_of_year %>
+</div>

@@ -1,38 +1,40 @@
-<div class="container" style="width: 450px; background-color: transparent; ">
-  <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
-    <div class="row justify-content-center">
-      <div class="col-sm-12">
-        <h2><strong>Log in</strong></h2>
-        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-          <div class="form-inputs">
-            <%= f.input :email,
+<div style="background: linear-gradient(to right bottom, rgb(108, 255, 178), rgb(126, 193, 255));height: 100%; display: flex;">
+  <div class="container" style="width: 450px; background-color: transparent; ">
+    <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <h2><strong>Log in</strong></h2>
+          <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="form-inputs">
+              <%= f.input :email,
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "email" } %>
-            <%= f.input :password,
+              <%= f.input :password,
                 required: false,
                 input_html: { autocomplete: "current-password" } %>
-            <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-          </div>
-          <div class="form-actions mb-3">
-            <%= f.button :submit, "Log in" %>
-          </div>
-          <div class="text-center" style= "line-height: 0px;">
-            <hr/><span class="">or</span><hr/>
-          </div>
-          <div class="">
-            <a href="#" class="fb btn">
-              <i class="fab fa-facebook-f mr-3"></i> Log in with Facebook
-            </a>
-            <a href="#" class="twitter btn">
-              <i class="fab fa-twitter mr-3" style="padding-left: 0px;"></i> Log in with Twitter
-            </a>
-            <a href="#" class="google btn mb-3">
-              <i class="fab fa-google mr-3"></i> Log in with Google+
-            </a>
-          </div>
-        <% end %>
-        <%= render "devise/shared/links" %>
+              <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+            </div>
+            <div class="form-actions mb-3">
+              <%= f.button :submit, "Log in" %>
+            </div>
+            <div class="text-center" style= "line-height: 0px;">
+              <hr/><span class="">or</span><hr/>
+            </div>
+            <div class="">
+              <a href="#" class="fb btn">
+                <i class="fab fa-facebook-f mr-3"></i> Log in with Facebook
+              </a>
+              <a href="#" class="twitter btn">
+                <i class="fab fa-twitter mr-3" style="padding-left: 0px;"></i> Log in with Twitter
+              </a>
+              <a href="#" class="google btn mb-3">
+                <i class="fab fa-google mr-3"></i> Log in with Google+
+              </a>
+            </div>
+          <% end %>
+          <%= render "devise/shared/links" %>
+        </div>
       </div>
     </div>
   </div>
