@@ -6,7 +6,6 @@ class EventsController < ApplicationController
     @event.calendar = @calendar
     @event.user = current_user
     authorize @event
-    raise
     if @event.save
       redirect_to month_view_calendar_path(@calendar)
     else
