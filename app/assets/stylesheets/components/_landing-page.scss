@@ -53,9 +53,11 @@
 
 
 .title {
-   display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    text-align: center;
+     h1 {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 46px;
+}
 }
 
 .button-card {
@@ -77,6 +79,7 @@
     justify-content: space-around;
     margin-bottom: 12px;
     margin-top: 12px;
+
   }
 
 .card-bottom {
@@ -85,6 +88,7 @@
     padding: 22px;
         h2 {
           font-size: 38px;
+          //  font-family: 'Roboto', sans-serif;
         }
 }
 
