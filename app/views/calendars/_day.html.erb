@@ -7,7 +7,7 @@
     <%= render 'calendars/event-info-modal', event: event %>
   <% end %>
   <div class="d-flex">
-    <i class="far fa-calendar-plus" data-toggle="modal" data-target="#event-modal-<%= @day_of_year %>"></i>
+    <i class="far fa-calendar-plus cursor-pointer" data-toggle="modal" data-target="#event-modal-<%= @day_of_year %>"></i>
     <%= render 'events/modal', day_of_year: @day_of_year %>
   </div>
 </div>
