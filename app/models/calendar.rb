@@ -7,4 +7,5 @@ class Calendar < ApplicationRecord
   validates :start_year, presence: true
   validates  :months, presence: true
   validates :weekdays, presence: true
+  validates :name, presence: true
 end
