@@ -33,11 +33,11 @@ calendar = Calendar.new({
 calendar.user = user
 calendar.save
 
-pancake = Event.new({
+pancake = Event.new(
   name: "pancake day",
   category: "holiday",
   day_number: 10
-})
+)
 pancake.calendar = calendar
 pancake.user = user
 pancake.save
