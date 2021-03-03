@@ -9,6 +9,7 @@ class CalendarsController < ApplicationController
   def show
     @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
+    @event = Event.new
   end
 
   def find_day_events(events, day)
@@ -33,7 +34,7 @@ class CalendarsController < ApplicationController
   def calendar_params
     params.require(:calendar).permit(:start_day, :start_year, :current_day, :months, :weekdays, :user)
   end
- 
+
   def calculate_date(target_day)
     @calendar = Calendar.first
     @sum_of_months = 0

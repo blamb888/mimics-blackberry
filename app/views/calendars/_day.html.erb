@@ -5,5 +5,6 @@
   <% @day_events.each do |event|%>
     <%= render "calendars/event", :event=> event%>
   <% end %>
-  <%= link_to "+ Event", new_calendar_event_path(calendar) %>
+  <i class="fas fa-plus-square cursor-pointer" data-toggle="modal" data-target="#event-modal-<%= counter %>"></i>
+  <%= render 'events/modal', counter: counter %>
 </div>
