@@ -17,8 +17,8 @@
     grid-auto-flow: dense;  grid-gap: 2px 10px;">
       <% @year_day = 0 %>
       <% @today = 76 %>
-      <% @calendar.months.each do |month|%>
-        <%= link_to "#" do %>
+      <% @calendar.months.each.with_index do |month, index|%>
+        <%= link_to show_month_calendar_path(@calendar, :month_id => index, :today => @today) do %>
           <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
         <% end %>
       <% end %>
