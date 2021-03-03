@@ -1,3 +1,13 @@
 <% if policy(Event).create? %>
   <%= link_to "New event", new_calendar_event_path %>
+  <h1><strong>Add new event</strong></h1>
+  <%= simple_form_for [@event] do |f| %>
+    <%= f.input :day_number, required: true %>
+    <%= f.input :name, required: false %>
+    <%= f.input :description, required: false %>
+    <%= f.input :category, required: true, collection: Event::CATEGORIES, include_blank: false, style: "m-1" %>
+    <%= f.input :photo, required: false, as: :file , class: "btn btn-outline-danger mb-3" %>
+    <%= f.submit "Add Costume", class: "btn btn-outline-danger mb-3"%>
+  <% end %>
+<% end %>
 <% end %>
