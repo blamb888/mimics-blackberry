@@ -1,0 +1,8 @@
+<div style="width: 150px; height: 100px; margin: 0px; border: solid 1px gray; display: inline-block;">
+  <%= counter %>
+  <%= @calendar.weekdays.keys[days_of_week_counter].capitalize %>
+  <% @day_events = find_day_events(@events, @day_of_year)%>
+  <% @day_events.each do |event|%>
+    <%= render "calendars/event", :event=> event%>
+  <% end %>
+</div>
