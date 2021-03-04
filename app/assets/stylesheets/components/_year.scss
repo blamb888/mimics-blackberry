@@ -4,4 +4,8 @@
     & a{
       color: rgb(230, 203, 203);
     }
+    & a:hover {
+      color: rgb(255, 255, 255);
+      margin-right: 1px;
+    }
 }
