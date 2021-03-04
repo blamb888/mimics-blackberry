@@ -40,4 +40,11 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     return @final_date
   end
 
+  def event_day_calculation(today)
+    date_calculation = self.calculate_date(today.to_i)
+    month_name = date_calculation.keys.first
+    day_number = date_calculation.values.first
+    date = "#{month_name} - #{day_number}"
+  end
+
 end

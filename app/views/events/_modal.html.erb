@@ -3,8 +3,9 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <% date_calculation = @calendar.calculate_date(params[:today].to_i) %>
-        <h5 class="modal-title" id="exampleModalLabel">Add New Event to <%= date_calculation.keys.first %> - <%= date_calculation.values.first %></h5>
+        <!--<% date_calculation = @calendar.calculate_date(params[:today].to_i) %> This has been refactored -->
+        <h5 class="modal-title" id="exampleModalLabel">Add New Event to <%= @calendar.event_day_calculation(params[:today]) %></h5>
+        <!--<%= date_calculation.keys.first %> - <#%= date_calculation.values.first %> This is part of the above method~ now in model-->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
