@@ -2,6 +2,14 @@
 
 }
 
+#month-view a {
+  color: rgb(202, 154, 22);
+  font-style: bold;
+  & a:hover {
+    color: rgb(243, 239, 226);
+    font-weight: 900;
+  }
+}
 .month-card {
   // width: 150px;
   // height: 100px;
