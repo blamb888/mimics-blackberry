@@ -1,0 +1,9 @@
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-body {
+  word-break: break-all;
+}
