@@ -13,11 +13,13 @@ class CalendarsController < ApplicationController
   end
 
   def show_month
-    @calendar = Calendar.find(params[:id])
+    @calendar = Calendar.includes(:events).find(params[:id])
     authorize @calendar
     @month_name = @calendar.months.keys[params[:month_id].to_i]
     @month_days = @calendar.months.values[params[:month_id].to_i]
-    @events = Event.where(:calendar_id == @calendar)
+    @events = @calendar.events
+    @month_index = params[:month_id]
+    # @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
   end
 

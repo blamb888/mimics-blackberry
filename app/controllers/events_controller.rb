@@ -7,7 +7,7 @@ class EventsController < ApplicationController
     @event.user = current_user
     authorize @event
     if @event.save
-      redirect_to month_view_calendar_path(@calendar), notice: 'Event was successfully created.'
+      redirect_to month_view_calendar_path(@calendar, :month_id => params[:month_id].to_i, :today => params[:day_number].to_i), notice: 'Event was successfully created.'
     else
       redirect_to month_view_calendar_path(@calendar)
     end
