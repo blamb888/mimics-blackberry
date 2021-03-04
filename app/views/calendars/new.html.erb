@@ -1,47 +1,71 @@
 <div class="background-new" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= image_path 'solo.jpg'%>)">
   <div class="cards-show">
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'solo.jpg'%>)">
-        <span>
-          <h2>Custom </h2>
-          <h2>Calendar</h2>
-        </span>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "custom calendar" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'solo.jpg'%>)">
+          <span>
+            <h2>Custom </h2>
+            <h2>Calendar</h2>
+          </span>
+        </div>
+       <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'eberron.jpg'%>)">
-        <h2>Eberron</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "eberron" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'eberron.jpg'%>)">
+          <h2>Eberron</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'faerun.jpg'%>)">
-        <h2>Faerun</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "faerun" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'faerun.jpg'%>)">
+          <h2>Faerun</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'wildermount.jpg'%>)">
-        <h2>Wildermount</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "wildermount" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'wildermount.jpg'%>)">
+          <h2>Wildermount</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'middleearth.jpg'%>)">
-        <h2>Middle Earth</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "middle earth" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'middleearth.jpg'%>)">
+          <h2>Middle Earth</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'blackmoor.jpg'%>)">
-        <h2>Blackmoor</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "blackmoor" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'blackmoor.jpg'%>)">
+          <h2>Blackmoor</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'barovia.jpg'%>)">
-        <h2>Barovia</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "barovia" %>
+        <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'barovia.jpg'%>)">
+          <h2>Barovia</h2>
+        </div>
+      <% end %>
     <% end %>
-    <%= link_to do %>
-      <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'mithril.jpg'%>)">
-        <h2>Mithral Hall</h2>
-      </div>
+    <%= simple_form_for [@calendar] do |f| %>
+      <%= hidden_field_tag :template, "mithral hall" %>
+      <%= f.button :button do %>
+        <div class="card-category-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'mithril.jpg'%>)">
+          <h2>Mithral Hall</h2>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>

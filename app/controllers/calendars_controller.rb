@@ -24,14 +24,17 @@ class CalendarsController < ApplicationController
   end
 
   def new
-    @calendars = policy_scope(Calendar)
     @calendar = Calendar.new
     authorize @calendar
   end
 
   def create
-    @calendar = Calendar.new(calendar_params)
-    @calendar.user == current_user
+    if params[:template].present?
+      @calendar = Calendar.new_template(params[:template])
+    else
+      @calendar = Calendar.new(calendar_params)
+    end
+    @calendar.user = current_user
     authorize @calendar
     if @calendar.save
       redirect_to calendar_path(@calendar)
@@ -39,7 +42,6 @@ class CalendarsController < ApplicationController
       render :new
     end
   end
-
 
   def find_day_events(events, day)
     day_events = []
