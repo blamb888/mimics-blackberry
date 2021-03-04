@@ -1,20 +1,21 @@
-<div class="container" style="width: 450px; background-color: transparent; ">
-  <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
-    <div class="row justify-content-center">
-      <div class="col-sm-12">
-        <h2><strong>Sign up</strong></h2>
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-          <%= f.error_notification %>
-          <div class="form-inputs mt-1">
-            <%= f.input :email,
+<div style="background: linear-gradient(to right bottom, rgb(108, 255, 178), rgb(126, 193, 255));height: 100%; display: flex;">
+  <div class="container" style="width: 450px; background-color: transparent; ">
+    <div class="card my-5 p-3" style="background-color: #40566F; border-radius: 5px; color: white">
+      <div class="row justify-content-center">
+        <div class="col-sm-12">
+          <h2><strong>Sign up</strong></h2>
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <%= f.error_notification %>
+            <div class="form-inputs mt-1">
+              <%= f.input :email,
                 required: false,
                 autofocus: true,
                 input_html: { autocomplete: "email" }%>
-            <%= f.input :password,
+              <%= f.input :password,
                 required: false,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
-            <!--<%= f.input :password_confirmation,
+              <!--<%= f.input :password_confirmation,
                 required: false,
                 input_html: { autocomplete: "new-password" } %>-->
             <%= f.input :photo %>
