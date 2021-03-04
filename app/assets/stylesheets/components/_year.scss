@@ -1,3 +1,7 @@
-.months-container a{
- 
+.month-card-container {
+  padding: 16px;
+  overflow: overlay;
+    & a{
+      color: rgb(230, 203, 203);
+    }
 }
