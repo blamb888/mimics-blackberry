@@ -1,6 +1,7 @@
 <% if policy(Event).create? %>
   <%= simple_form_for [@calendar, @event], namespace: "day_#{ @day_of_year }" do |f| %>
     <%= f.input :day_number, as: :hidden, input_html: { value: @day_of_year } %>
+    <%= hidden_field_tag(:month_id, @month_index) %>
     <%= f.input :name, required: true %>
     <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
     <%= f.rich_text_area :rich_description %>

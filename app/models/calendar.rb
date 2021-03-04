@@ -47,4 +47,19 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     date = "#{month_name} - #{day_number}"
   end
 
+  def get_next_month(month_index)
+    next_month = month_index.to_i + 1
+    if next_month > self.months.length - 1
+      next_month = 0
+    end
+    return next_month
+  end
+
+  def get_previous_month(month_index)
+    next_month = month_index.to_i - 1
+    if next_month < 0
+      next_month = self.months.length - 1
+    end
+    return next_month
+  end
 end

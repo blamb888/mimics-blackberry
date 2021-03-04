@@ -1,5 +1,6 @@
-<div class="container">
-  <!-- 
+<div class="background-new" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= image_path 'solo.jpg'%>)">
+  <div class="container">
+    <!--
   <h6>Calendar Creator: <%= @calendar.user.email %></h6>
   <h6>Start Day:<%= @calendar.start_day %></h6>
   <h6>Start Year:<%= @calendar.start_year %></h6>
@@ -7,15 +8,32 @@
   <h6>Months:<%= @calendar.months %></h6>
   <h6>Weekdays:<%= @calendar.weekdays %></h6>
   -->
-    <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
+    <div class="month-card-container" style="border: solid 4px #512002">
+      <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;  grid-gap: 2px 10px;">
-      <% @year_day = 0 %>
-      <% @today = 76 %>
-      <% @calendar.months.each.with_index do |month, index|%>
-        <%= link_to month_view_calendar_path(@calendar, :month_id => index, :today => @today) do %>
-          <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
+        <% @year_day = 0 %>
+        <% @today = 76 %>
+        <% @calendar.months.each.with_index do |month, index|%>
+          <%= link_to month_view_calendar_path(@calendar, :month_id => index, :today => @today) do %>
+            <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
+          <% end %>
         <% end %>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="bottom-buttons">
+    <div style="position: relative; right: 605px;">
+      <%= link_to calendars_path do %>
+        <i class="fas fa-backward">Recent games</i>
       <% end %>
     </div>
+    <br>
+    <div style="position: relative; left: 550px;">
+      <%= link_to root_path do %>
+        <i class="fas fa-house-user">Home</i>
+      <% end %>
+    </div>
+  </div>
 </div>
-
