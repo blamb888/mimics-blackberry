@@ -33,16 +33,17 @@
     </div>
   </div>
   <br>
-  <div style="position: relative; ">
-    <%= link_to calendar_path(@calendar) do %>
-      <i class="fas fa-backward">Year view</i>
-    <% end %>
-  </div>
-  <br>
-  <div class="justify-content-right">
-    <%= link_to root_path do %>
-      <i class="fas fa-house-user">Home</i>
-    <% end %>
+  <div class="bottom-buttons">
+    <div style="position: relative; right: 600px;">
+      <%= link_to calendar_path(@calendar) do %>
+        <i class="fas fa-backward">Year view</i>
+      <% end %>
+    </div>
+    <div style="position: relative; left: 575px;">
+      <%= link_to root_path do %>
+        <i class="fas fa-house-user">Home</i>
+      <% end %>
+    </div>
   </div>
 </div>
 <a href="www.google.com"><i class="fa fa-facebook"></i></a>
