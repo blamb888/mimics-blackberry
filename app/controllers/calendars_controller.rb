@@ -11,7 +11,7 @@ class CalendarsController < ApplicationController
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
   end
-  
+
   def show_month
     @calendar = Calendar.find(params[:id])
     authorize @calendar
