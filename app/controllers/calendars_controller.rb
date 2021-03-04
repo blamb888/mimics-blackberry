@@ -17,7 +17,8 @@ class CalendarsController < ApplicationController
     authorize @calendar
     @month_name = @calendar.months.keys[params[:month_id].to_i]
     @month_days = @calendar.months.values[params[:month_id].to_i]
-    @events = Event.where(:calendar_id == params[:id])
+    # @events = Event.where(:calendar_id == params[:id])
+    @events = @calendar.events
     @event = Event.new
   end
 
