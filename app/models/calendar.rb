@@ -7,6 +7,7 @@ class Calendar < ApplicationRecord
   validates :start_year, presence: true
   validates :months, presence: true
   validates :weekdays, presence: true
+  validates :name, presence: true
 
 def calculate_date(target_day) #TODO maybe I could refactor this.
     @calendar = self
