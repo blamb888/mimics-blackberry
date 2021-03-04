@@ -1,7 +1,17 @@
 <!-- TAKE MONTH ID TO GET MONTH FROM CALENDAR-->
 <div class="background-month" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg'%>)">
-  <h1 class="month-title mb-3"><%= @month_name%></h1>
-  <div class="month-card-container" style="border: solid 4px #512002">
+  <h1 class="month-title mb-3">
+    <!-- counter = 0
+    if counter <= 12 -->
+    <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_previous_month(params[:month_id]), :today => @today) do %>
+      <i id="month-button" class="fas fa-chevron-left"></i>
+    <% end %>
+    <%= @month_name %>
+    <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_next_month(params[:month_id]), :today => @today) do %>
+      <i id="month-button" class="fas fa-chevron-right"></i>
+    <% end %>
+  </h1>
+  <div id="month-view" class="month-card-container">
     <% #display name of month %>
     <% #container for month partials%>
     <div id="calendar-container" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
@@ -22,4 +32,18 @@
       <% end %>
     </div>
   </div>
+  <br>
+  <div style="position: relative; ">
+    <%= link_to calendar_path(@calendar) do %>
+      <i id="month-button" class="fas fa-backward">Year view</i>
+    <% end %>
+  </div>
+  <br>
+  <div class="justify-content-right">
+    <%= link_to root_path do %>
+      <i id="month-button" class="fas fa-house-user">Home</i>
+    <% end %>
+  </div>
 </div>
+<a href="www.google.com"><i class="fa fa-facebook"></i></a>
+<a name="name_of_target">Content</a>
