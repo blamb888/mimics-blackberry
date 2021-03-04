@@ -18,6 +18,7 @@ class CalendarsController < ApplicationController
     @month_name = @calendar.months.keys[params[:month_id].to_i]
     @month_days = @calendar.months.values[params[:month_id].to_i]
     @events = @calendar.events
+    @month_index = params[:month_id]
     # @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
   end
