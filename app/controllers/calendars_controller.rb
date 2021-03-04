@@ -11,7 +11,7 @@ class CalendarsController < ApplicationController
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
   end
-  
+
   def show_month
     @calendar = Calendar.find(params[:id])
     authorize @calendar
@@ -22,7 +22,7 @@ class CalendarsController < ApplicationController
   end
 
   def new
-     @calendars = policy_scope(Calendar)
+    @calendars = policy_scope(Calendar)
     @calendar = Calendar.new
     authorize @calendar
   end
@@ -31,11 +31,11 @@ class CalendarsController < ApplicationController
     @calendar = Calendar.new(calendar_params)
     @calendar.user == current_user
     authorize @calendar
-      if @calendar.save
-        redirect_to calendar_path(@calendar)
-      else
-        render :new
-      end
+    if @calendar.save
+      redirect_to calendar_path(@calendar)
+    else
+      render :new
+    end
   end
 
 
