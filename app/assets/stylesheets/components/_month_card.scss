@@ -3,12 +3,18 @@
 }
 
 .month-card {
-  width: 150px;
-  height: 100px;
-  border: solid 5px solid white;
-  justify-content: center;
-  color: black;
-  padding: 3px;
+  // width: 150px;
+  // height: 100px;
+  // border: solid 5px solid white;
+  // justify-content: center;
+  // color: black;
+  // padding: 3px;
+  position: relative;
+  width: 160px;
+  height: 110px;
+  margin: 0px;
+  border: solid 2px #512002;
+  background: linear-gradient(73deg, rgba(255,252,215,1) 0%, rgba(255,240,162,0.9699230033810399) 50%, rgba(251,215,147,1) 100%);
 
 }
 
@@ -38,7 +44,7 @@
 }
 
 .fa-calendar-plus {
-  position: relative;
-  left: 135px;
-  bottom: 25px;
+  position: absolute;
+  left: 140px;
+  top: 5px;
 }
