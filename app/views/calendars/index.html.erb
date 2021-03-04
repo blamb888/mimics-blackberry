@@ -1,28 +1,31 @@
-<div class="container-box d-flex">
-  <div class="col-md-8">
-    <h1 class="row justify-content-center">RECENT GAMES</h1>
-    <div style="float: right; margin-right: 60px; margin-top: 7px;">
-      <div class="calendars">
-        <div class="row justify-content-center">
-          <div class="cards">
-            <% @calendars.each do |calendar| %>
-              <%= link_to calendar_path(calendar) do %>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'eberron.jpg' %>)">
-                  Eberron
-                </div>
-              <% end %>
-            <% end %>
-          </div>
-        </div>
-      </div>
+<div>
+  <ul class="list-inline tabs-underlined">
+    <li>
+      <a href="/calendars" class="tab-underlined active">Games</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined">Profile</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined">GM's Tool Kit</a>
+    </li>
+  </ul>
+</div>
+<div class="wrapper">
+  <h2><strong>Recent Games<span></span></strong></h2>
+</div>
+<div class="container-vault">
+  <div class="row">
+    <div class="col-md-3">
     </div>
   </div>
-  <div class="side-options">
-    <div style="float: right; margin-right: 60px; margin-top: 7px;">
-      <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-sm" %>
-      <br>
-      <br>
-      <a href="#" class="btn btn-sm">Join a Game</a>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="cards-vault">
+        <div class="card-vault" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          Breakfast
+        </div>
+      </div>
     </div>
   </div>
 </div>
