@@ -51,6 +51,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     case template
     when "eberron"
       Calendar.new(
+        name: "Eberron",
         start_day: 1,
         start_year: 1,
         current_day: 1,
