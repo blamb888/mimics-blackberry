@@ -46,7 +46,20 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     day_number = date_calculation.values.first
     date = "#{month_name} - #{day_number}"
   end
-
+  
+  def self.new_template(template)
+    case template
+    when "eberron"
+      Calendar.new(
+        start_day: 1,
+        start_year: 1,
+        current_day: 1,
+        months: {Zarantyr: 28, Olarune: 28, Therendor: 28, Eyre: 28, Dravago: 28, Nymm: 28, Lharvion: 28, Barrakas: 28, Rhaan: 28, Sypheros: 28, Aryth: 28, Vult: 28 },
+        weekdays:{Sul: 0, Mol: 1, Zol: 2, Wir: 3, Zor: 4, Far: 5, Sar: 6}
+      )
+    end
+  end
+ 
   def get_next_month(month_index)
     next_month = month_index.to_i + 1
     if next_month > self.months.length - 1
