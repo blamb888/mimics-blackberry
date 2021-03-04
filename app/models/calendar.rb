@@ -77,4 +77,8 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     end
     return next_month
   end
+
+  def set_current_day(day)
+    self.current_day = day
+  end
 end
