@@ -4,7 +4,7 @@ class Event < ApplicationRecord
   has_rich_text :rich_description
   has_many_attached :photos
 
-  CATEGORIES = ['Weather', 'Notes', 'Holiday', 'Item', 'Character']
+  CATEGORIES = ['Weather', 'Notes', 'Holiday', 'Item', 'Character', 'Historical Event']
 
   validates :name, presence: true
   validates :category, presence: true
