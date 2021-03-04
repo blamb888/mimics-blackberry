@@ -45,3 +45,9 @@
     <% end %>
   </div>
 </div>
+<div class="card" style="width: 200px;">
+  <%= simple_form_for [@calendar] do |f| %>
+    <%= hidden_field_tag :template, "eberron" %>
+    <%= f.submit "Add map", class: "btn"%>
+  <% end %>
+</div>
