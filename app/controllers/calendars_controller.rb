@@ -74,7 +74,7 @@ class CalendarsController < ApplicationController
   end
 
   def calendar_params
-    params.require(:calendar).permit(:start_day, :start_year, :current_day, :months, :weekdays, :user)
+    params.require(:calendar).permit(:name, :start_day, :start_year, :current_day, :months, :weekdays, :user)
   end
 
   # def calculate_date(target_day)
