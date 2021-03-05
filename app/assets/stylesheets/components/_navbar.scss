@@ -1,8 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: $blue;
-  border-width: 0px 0px 4px;
-    border-color: rgb(126, 193, 255);
+  border-width: 0px 0px 5px;
+    border-color: rgb(117,226,215);
     border-style: solid;
 }
 
@@ -11,11 +11,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
-a {
-  color: white;
+  width: 300px;
 }
 
 .collapse .navbar-collapse {
@@ -49,4 +45,11 @@ a.btn.btn-outline-light:hover {
   text-decoration: none;
   color: #40566F;
   background-color: white;
+}
+
+.btn.btn-success {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
 }
