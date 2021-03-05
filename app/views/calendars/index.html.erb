@@ -23,8 +23,13 @@
           <img src="<%= image_path 'dnd.gif' %>" alt="profile-image" class="profile"/>
         </div>
         <div class="card-content">
-          <h2>Ruben Rubilar<small>Dark Knight</small></h3>
-          <p>I'm new in this amazing world of D&D, not interested yet in being a game master. My favourite roles are meele characters, such as warriors, barbarian or knights.</p>
+          <h2>Brandon<small>Wiley Wizard</small></h3>
+          <ul style="list-style: none;">
+            <li><%= link_to 'Plus' %> | <%= link_to 'Manage Subscription' %></li>
+            <li><%= link_to 'Help Center' %></li>
+            <li>Member since: 09/21/18</li>
+            <li>Hours Played: 951</li>
+          </ul>
           <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
           <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none" %>
         </div>
