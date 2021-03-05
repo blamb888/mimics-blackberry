@@ -28,7 +28,7 @@ class CalendarsController < ApplicationController
     authorize @calendar
     @day_of_year = params[:day_of_year]
     @events = @calendar.events
-    @day_events = find_day_events(@events, params[:day_of_year])
+    @day_events = find_day_events(@events, params[:day_of_year].to_i)
     @event = Event.new
   end
 

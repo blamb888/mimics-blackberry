@@ -3,6 +3,8 @@
     <i class="far fa-calendar-plus cursor-pointer" data-toggle="modal" data-target="#event-modal-<%= @day_of_year %>"></i>
     <%= render 'events/modal', day_of_year: @day_of_year %>
   </div>
-<% @day_events.each do |event|%>
-  <%= event.name%>
-<% end %>
+<div>
+  <% @day_events.each do |event|%>
+    <%= event.name%>
+  <% end %>
+</div>
