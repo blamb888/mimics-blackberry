@@ -6,22 +6,23 @@
   justify-content: space-between;
 }
 
+.arrow-buttons {
+  margin: 32px 16px 0px 16px;
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+}
+
 .fas.fa-caret-left {
  color: rgba(27,40,54, 0.3);
- left: 80px;
- position: absolute;
-/* top: 18px; */
- bottom: 330px;
- font-size: 50px;
+ font-size: 38px;
+
 }
 
 .fas.fa-caret-right {
   color: rgba(27,40,54, 0.3);
- right: 80px;
- position: absolute;
-/* top: 18px; */
- bottom: 330px;
- font-size: 50px;
+  font-size: 38px;
+
 }
 
 .fas.fa-home {
