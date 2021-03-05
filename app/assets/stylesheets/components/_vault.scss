@@ -52,13 +52,12 @@ text-align: center;
 h6 {
 text-align:center;
 display: grid;
-grid-template-columns: 1fr max-content 1fr;
+grid-template-columns: 200px max-content 200px;
 grid-template-rows: 15px 0;
 grid-gap: 20px;
 justify-content:center;
 font-size: 25px;
 color: rgb(27,40,54);
-font-family: 'Uncial Antiqua', cursive;
 }
 
 h6:after,h6:before {
