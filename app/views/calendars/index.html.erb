@@ -1,28 +1,55 @@
-<div class="container-box d-flex">
-  <div class="col-md-8">
-    <h1 class="row justify-content-center">RECENT GAMES</h1>
-    <div style="float: right; margin-right: 60px; margin-top: 7px;">
-      <div class="calendars">
-        <div class="row justify-content-center">
+<div>
+  <ul class="list-inline tabs-underlined">
+    <li>
+      <a href="/calendars" class="tab-underlined active">Games</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined">Profile</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined">GM's Tool Kit</a>
+    </li>
+  </ul>
+</div>
+<div class="background-index" style="background-color rgb(240, 240, 240);">
+  <h5><strong>Recent Games<span></span></strong></h5>
+  <div class="container-index mt-1">
+    <div class="col-md-3">
+      <div class="card profile-card-3">
+        <div class="background-block">
+          <img src="https://wallpapermemory.com/uploads/487/knight-background-laptop-239092.jpg" alt="profile-sample1" class="background"/>
+        </div>
+        <div class="profile-thumb-block">
+          <img src="<%= image_path 'ruben.jpg' %>" alt="profile-image" class="profile"/>
+        </div>
+        <div class="card-content">
+          <h2>Ruben Rubilar<small>Dark Knight</small></h3>
+          <p>I'm new in this amazing world of D&D, not interested yet in being a game master. My favourite roles are meele characters, such as warriors, barbarian or knights.</p>
+          <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
+          <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none" %>
+        </div>
+      </div>
+    </div>
+    <div class="cards-vault">
+      <div class="col-md-9">
+        <div class="calendars">
           <div class="cards">
             <% @calendars.each do |calendar| %>
               <%= link_to calendar_path(calendar) do %>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'eberron.jpg' %>)">
+                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>)">
                   Eberron
                 </div>
               <% end %>
             <% end %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'middleearth.jpg' %>)">
+              <span>
+                <h2>Middle </h2>
+                <h2>Earth</h2>
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="side-options">
-    <div style="float: right; margin-right: 60px; margin-top: 7px;">
-      <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-sm" %>
-      <br>
-      <br>
-      <a href="#" class="btn btn-sm">Join a Game</a>
     </div>
   </div>
 </div>
