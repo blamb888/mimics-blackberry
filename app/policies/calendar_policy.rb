@@ -15,6 +15,10 @@ class CalendarPolicy < ApplicationPolicy
     record.user == user
   end
 
+  def show_day?
+    record.user == user
+  end
+
     def new?
       return true
     end

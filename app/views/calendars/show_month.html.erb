@@ -24,8 +24,9 @@
       <% @month_days.times do %>
         <% day_of_month += 1 %>
         <% @day_of_year += 1 %>
-        <%= render "calendars/day", :calendar => @calendar, :counter => day_of_month,
-      :days_of_week_counter => days_of_week_counter, :day_of_year => @day_of_year, :today => @today %>
+        <%= link_to day_view_calendar_path(@calendar, :month_id => params[:month_id], :day_of_year => @day_of_year, :today => @today) do %>
+          <%= render "calendars/day",:counter => day_of_month, :days_of_week_counter => days_of_week_counter, :day_of_year => @day_of_year, :today => @today %>
+          <% end %>
         <% days_of_week_counter += 1 %>
         <% if days_of_week_counter == @calendar.weekdays.length then days_of_week_counter = 0 %>
         <% end %>

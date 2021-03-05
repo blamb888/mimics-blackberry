@@ -23,6 +23,15 @@ class CalendarsController < ApplicationController
     @event = Event.new
   end
 
+  def show_day
+    @calendar = Calendar.includes(:events).find(params[:id])
+    authorize @calendar
+    @day_of_year = params[:day_of_year]
+    @events = @calendar.events
+    @day_events = find_day_events(@events, params[:day_of_year])
+    @event = Event.new
+  end
+
   def new
     @calendar = Calendar.new
     authorize @calendar

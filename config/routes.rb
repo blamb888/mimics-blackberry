@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :events, only: [:create]
     member do
       get '/show_month', to: 'calendars#show_month', as: :month_view
+      get '/show_day', to: 'calendars#show_day', as: :day_view
     end
   end
   resources :events, only: [:edit, :update, :destroy]
