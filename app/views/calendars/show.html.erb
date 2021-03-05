@@ -1,4 +1,4 @@
-<div class="background-new" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(<%= image_path 'solo.jpg'%>)">
+<div class="background-new">
   <div class="container">
     <!--
   <h6>Calendar Creator: <%= @calendar.user.email %></h6>
@@ -22,19 +22,18 @@
       </div>
     </div>
   </div>
-  <br>
-  <br>
-  <div class="bottom-buttons">
-    <div style="position: relative; right: 605px;">
+  <div class="bottom-buttons-year">
+    <div>
       <%= link_to calendars_path do %>
-        <i class="fas fa-backward">Recent games</i>
+        <i class="fas fa-chevron-circle-left"></i>
       <% end %>
     </div>
-    <br>
-    <div style="position: relative; left: 550px;">
+    <div>
       <%= link_to root_path do %>
-        <i class="fas fa-house-user">Home</i>
+        <i class="fas fa-home"></i>
       <% end %>
     </div>
   </div>
+  <br>
+  <br>
 </div>
