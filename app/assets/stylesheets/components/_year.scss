@@ -2,17 +2,21 @@
   padding: 16px;
   overflow: overlay;
     & a{
-      color: rgb(255, 255, 255);
+      color: black;
     }
     & a:hover {
-      color: rgb(241, 230, 230);
+      color: #41566F;
       margin-right: 1px;
     }
     & #year-view-title {
-      color: white;
+      color: #1B2936;
       text-align: center;
       font-family: 'Uncial Antiqua', cursive;
       font-size: 46px;
       margin-bottom: 24px;
     }
+}
+
+.background-new {
+  background-color: rgb(240, 240, 240);
 }

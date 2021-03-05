@@ -44,3 +44,39 @@
    color: rgb(65, 189, 211);
   font-size: 33px;
 }
+
+
+// Added by me
+#months-container a {
+  font-family: 'Akaya Telivigala', cursive;
+  margin-bottom: 20px;
+}
+
+.bottom-buttons-year {
+  display: flex;
+  width: 90%;
+  margin: 16px;
+  justify-content: space-between;
+}
+
+
+.fas.fa-chevron-circle-left {
+  font-size: 32px;
+  color: rgb(117,226,215);
+}
+
+.fas.fa-home {
+  color: rgb(27, 40, 54);
+  font-size: 32px;
+  color: rgb(117,226,215);
+}
+
+.fas.fa-chevron-circle-left:hover {
+  font-size: 32px;
+  color: rgb(65,189,211);
+}
+
+.fas.fa-home:hover {
+  font-size: 32px;
+  color: rgb(65,189,211);
+}
