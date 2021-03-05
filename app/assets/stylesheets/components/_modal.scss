@@ -1,0 +1,28 @@
+.modal-title {
+  text-align:center;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 15px 0;
+  grid-gap: 20px;
+  justify-content:center;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: none;
+}
+
+.modal-body h5 {
+  color:#1B2836;
+  text-align:center;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 15px 0;
+  grid-gap: 20px;
+  justify-content:center;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-body  {
+    color: #1B2836;
+    text-shadow: none;
+}

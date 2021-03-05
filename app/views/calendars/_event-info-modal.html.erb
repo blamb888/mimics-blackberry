@@ -9,11 +9,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <h5><%= event.category %></h5>
+        <h6><%= event.category %></h6>
         <% event.photos.each do |photo| %>
           <%= cl_image_tag photo.key %>
         <% end %>
-        <h6><%= event.rich_description %></h6>
+        <p><%= event.rich_description %></p>
       </div>
     </div>
   </div>
