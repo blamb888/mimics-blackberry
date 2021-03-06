@@ -10,6 +10,7 @@ class CalendarsController < ApplicationController
     @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
+    @user_calendar = UserCalendar.new
   end
 
   def show_month

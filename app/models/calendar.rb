@@ -1,5 +1,6 @@
 class Calendar < ApplicationRecord
   belongs_to :user
+  has_many :user_calendars, dependent: :destroy
   has_many :users, through: :user_calendars
   has_many :events, dependent: :destroy
 
