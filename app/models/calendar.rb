@@ -51,7 +51,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
   def self.new_template(template)
     case template
     when "eberron"
-      calendar = Calendar.create!(
+      calendar = Calendar.new(
         user: User.first,
         name: "Eberron",
         start_day: 1,
@@ -61,30 +61,14 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
         weekdays:{Sul: 0, Mol: 1, Zol: 2, Wir: 3, Zor: 4, Far: 5, Sar: 6}
       )
     end
-       Event.create!(
+       Event.new(
         calendar: calendar,
         user: User.first,
         name: "Rebirth Eve",
         category: "Holiday",
         day_number: 1,
-        rich_description: '<b>Rebirth Eve</b><br /><a href="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640" class="image"><img alt="Silver-flame.jpg" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="20" height="22" data-image-name="Silver-flame.jpg" data-image-key="Silver-flame.jpg" data-src="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640" class="lazyload" /></a> <a href="/wiki/The_Silver_Flame" class="mw-redirect" title="The Silver Flame">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
+        rich_description: '<b>Rebirth Eve</b><br /><a href="https://eberron.fandom.com/wiki/Church_of_the_Silver_Flame" target="_blank">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
       )
-      raise
-  end
-
-  def self.new_template_event(calendar)
-    case template
-    when "eberron"
-   Event.create!(
-        calendar: calendar,
-        user: calendar.user,
-        name: "rebirth eve",
-        category: "holiday",
-        day_number: 1,
-        rich_description: '<b>Rebirth Eve</b><br /><a href="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640" class="image"><img alt="Silver-flame.jpg" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="20" height="22" data-image-name="Silver-flame.jpg" data-image-key="Silver-flame.jpg" data-src="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640" class="lazyload" /></a> <a href="/wiki/The_Silver_Flame" class="mw-redirect" title="The Silver Flame">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
-      )
-      raise
-    end
   end
 
   def get_next_month(month_index)

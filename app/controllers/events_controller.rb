@@ -1,6 +1,12 @@
 class EventsController < ApplicationController
   before_action :find_calendar, only: [:create]
 
+
+  def new
+    @event = Event.new
+    authorize @event
+  end
+
   def create
     @event = Event.new(event_params)
     @event.calendar = @calendar
