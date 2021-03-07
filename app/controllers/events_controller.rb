@@ -11,6 +11,7 @@ class EventsController < ApplicationController
     else
       redirect_to month_view_calendar_path(@calendar)
     end
+    raise
   end
 
   private
