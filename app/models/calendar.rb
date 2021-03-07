@@ -51,7 +51,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
   def self.new_template(template)
     case template
     when "eberron"
-      calendar = Calendar.new(
+      @calendar = Calendar.new(
         user: User.first,
         name: "Eberron",
         start_day: 1,
@@ -61,14 +61,15 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
         weekdays:{Sul: 0, Mol: 1, Zol: 2, Wir: 3, Zor: 4, Far: 5, Sar: 6}
       )
     end
-       Event.new(
-        calendar: calendar,
+       Event.create!(
+        calendar: @calendar,
         user: User.first,
         name: "Rebirth Eve",
         category: "Holiday",
-        day_number: 1,
+        day_number: 14,
         rich_description: '<b>Rebirth Eve</b><br /><a href="https://eberron.fandom.com/wiki/Church_of_the_Silver_Flame" target="_blank">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
       )
+      @calendar
   end
 
   def get_next_month(month_index)
