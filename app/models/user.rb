@@ -6,6 +6,7 @@ class User < ApplicationRecord
     :recoverable, :rememberable, :validatable
 
   has_many :events
+  has_many :notification
   has_many :user_calendars
   has_many :calendars, through: :user_calendars
   has_one_attached :photo
