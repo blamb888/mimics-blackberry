@@ -13,8 +13,8 @@
 </div>
 <div class="background-index">
   <h6><strong>Recent Games<span></span></strong></h6>
-  <div class="container-index mt-1">
-    <div class="col-md-3">
+  <div class="row container-index mt-1">
+    <div class="col-12 col-md-3" >
       <div class="card profile-card-3">
         <div class="background-block">
           <%= image_tag "wizard.jpg", class: "background" %>
@@ -35,10 +35,10 @@
         </div>
       </div>
     </div>
-    <div class="cards-vault">
-      <div class="col-md-9">
+    <div class="col-12 col-md-9">
+      <div class="cards-vault">
         <div class="calendars">
-          <div class="cards">
+          <div class="cards mb-3">
             <% @calendars.each do |calendar| %>
               <%= link_to calendar_path(calendar) do %>
                 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>)">

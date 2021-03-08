@@ -47,6 +47,9 @@ h1 {
   .cards {
     grid-template-columns: 1fr;
   }
+  .card-category {
+    width: 100%;
+  }
 }
 
 
@@ -67,7 +70,7 @@ h1 {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
