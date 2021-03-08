@@ -248,6 +248,7 @@ border-bottom: 3px solid rgb(117,226,215);
   margin-bottom: 10px;
   width: 270px;
   height: 195px;
+  display: grid;
 }
 
 .card-trip-image {
@@ -279,7 +280,6 @@ border-bottom: 3px solid rgb(117,226,215);
 
 .card-trip .card-trip-infos {
   padding: 8px;
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;

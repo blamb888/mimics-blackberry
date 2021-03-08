@@ -43,6 +43,18 @@ class CalendarsController < ApplicationController
     end
   end
 
+  def edit
+    @calendar = Calendar.find(params[:id])
+    authorize @calendar
+  end
+
+  def update
+    @calendar = Calendar.find(params[:id])
+    @calendar.update(calendar_params)
+    authorize @calendar
+    redirect_to calendars_path
+  end
+
   def destroy
     @calendar.user = current_user
     Calendar.destroy(params[:id])
@@ -80,7 +92,7 @@ class CalendarsController < ApplicationController
   end
 
   def calendar_params
-    params.require(:calendar).permit(:name, :start_day, :start_year, :current_day, :months, :weekdays, :user)
+    params.require(:calendar).permit(:name, :start_day, :start_year, :current_day, :months, :weekdays, :user, :title, :description)
   end
 
   # def calculate_date(target_day)

@@ -44,13 +44,18 @@
                 <div class="card-trip">
                   <div class="card-trip-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>);height: 130px; border-radius: 2px;">
                     <span>
-                      <h2>Eberron</h2>
+                      <h2><%= calendar.name %></h2>
                     </span>
                   </div>
                   <div class="card-trip-infos">
                     <div>
-                      <h3>Title here</h3>
-                      <p>Short description here! ajhsfvjahs vfasjhfvasjfhv</p>
+                      <% if calendar.title != nil && calendar.description != nil %>
+                        <h3><%= calendar.title %></h3>
+                        <p><em><%= calendar.description %></em></p>
+                      <% else %>
+                        <h3>Add Game Title</h3>
+                        <p><em>Add Game Description</em></p>
+                      <% end %>
                     </div>
                   </div>
                 </div>
@@ -65,8 +70,8 @@
               </div>
               <div class="card-trip-infos">
                 <div>
-                  <h3>Title here</h3>
-                  <p>Short description here! ajhsfvjahs vfasjhfvasjfhv</p>
+                  <h3>Add Game Title</h3>
+                  <p><em>Add Game Description</em></p>
                 </div>
               </div>
             </div>

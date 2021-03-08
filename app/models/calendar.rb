@@ -8,6 +8,8 @@ class Calendar < ApplicationRecord
   validates :months, presence: true
   validates :weekdays, presence: true
   validates :name, presence: true
+  # validates :title, presence: true
+  # validates :description, presence: true
 
 def calculate_date(target_day) #TODO maybe I could refactor this.
     @calendar = self
@@ -47,7 +49,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     day_number = date_calculation.values.first
     date = "#{month_name} - #{day_number}"
   end
-  
+
   def self.new_template(template)
     case template
     when "eberron"
@@ -61,7 +63,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
       )
     end
   end
- 
+
   def get_next_month(month_index)
     next_month = month_index.to_i + 1
     if next_month > self.months.length - 1
