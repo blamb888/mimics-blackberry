@@ -166,7 +166,7 @@ align-items: center;
   position: relative;
   float: left;
   overflow: hidden;
-  width: 100%;
+  // width: 100%;
   text-align: center;
   border:none;
   border-radius: 5px;
@@ -212,7 +212,6 @@ align-items: center;
 .profile-card-3 .profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 55%;
   left: 50%;
   max-width: 100px;
   opacity: 1;
@@ -221,6 +220,7 @@ align-items: center;
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   z-index:99999;
+  top: 20%;
 }
 .profile-card-3 h2 {
   margin: 0 0 5px;
