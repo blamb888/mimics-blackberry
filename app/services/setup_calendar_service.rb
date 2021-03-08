@@ -8,8 +8,10 @@ class SetupCalendarService
   end
 
   def call
-    create_calendar
+    @calendar = create_calendar
     create_events
+    @calendar
+    raise
   end
 
   def create_calendar
@@ -24,19 +26,22 @@ class SetupCalendarService
         months: info[:calendar][:months],
         weekdays: info[:calendar][:weekdays]
       )
-      create_events
   end
 
   def create_events
     serialized_calendar = File.read(@file_path)
     info = JSON.parse(serialized_calendar, symbolize_names: true)
-    rich_description = info[:events][0][:rich_description]
-    raise
-      Event.create!(
-        calendar: @calendar,
-        user: @current_user,
-
-      )
+    # rich_description = info[:events][0][:rich_description]
+      info[:events].each do |event|
+        Event.create!(
+          calendar: @calendar,
+          user: @current_user,
+          name: event[:name],
+          category: event[:category],
+          day_number: event[:day_number],
+          rich_description: event[:rich_description]
+        )
+      end
   end
 
 end

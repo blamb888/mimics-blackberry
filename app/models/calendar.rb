@@ -65,10 +65,10 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
       #  Event.create!(
       #   calendar: @calendar,
       #   user: current_user,
-      #   name: "Rebirth Eve",
-      #   category: "Holiday",
-      #   day_number: 14,
-      #   rich_description: '<b>Rebirth Eve</b><br /><a href="https://eberron.fandom.com/wiki/Church_of_the_Silver_Flame" target="_blank">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
+        # name: "Rebirth Eve",
+        # category: "Holiday",
+        # day_number: 14,
+        # rich_description: '<b>Rebirth Eve</b><br /><a href="https://eberron.fandom.com/wiki/Church_of_the_Silver_Flame" target="_blank">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
       # )
       # Event.create!(
       #   calendar: @calendar,
