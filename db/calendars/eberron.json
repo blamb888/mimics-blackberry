@@ -74,6 +74,30 @@
     "category": "Holiday",
     "day_number": 138,
     "rich_description": "<b><a href='/wiki/Aureon%27s_Crown' title='Aureon&#39;s Crown'>Aureon's Crown</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />A celebration of knowledge, this holiday features lectures and sermons. It has also become the secular date for graduation and commencement ceremonies.<br />"
+  },
+  {
+    "name": "Promisetide",
+    "category": "Holiday",
+    "day_number": 140,
+    "rich_description": "<b><a class='new' title='Promisetide (page does not exist)' data-uncrawlable-url='L3dpa2kvUHJvbWlzZXRpZGU/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Promisetide</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This Flamic Holiday celebrates the coming of spring and the <a href='/wiki/Silver_Flame' title='Silver Flame'>Silver Flame</a>'s promise of a coming paradise. On this day they also celebrate the <a href='/wiki/Sovereign_Host' title='Sovereign Host'>Sovereign Host</a>'s role in creating the world - but they clarify that this is not a form of worship. The Sovereign Host's world was, according to Silver Flame worshipers, incomplete before the coming of the Flame. Many worshipers of the Host find this holiday to be offensive. <br />"
+  },
+  {
+    "name": "Brightblade",
+    "category": "Holiday",
+    "day_number": 152,
+    "rich_description": "<b>Brightblade</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This is the holy day of Dol Dorn, the Sovereign of Strength and Steel. As it celebrates a god of combat, festivities take the form of prizefights and athletic competitions, especially those that show skill with weaponry. Staged fights are frequent, and can be massive, with full scale staged battles made up of hundreds of warriors.<br />"
+  },
+  {
+    "name": "First Dawn",
+    "category": "Holiday",
+    "day_number": 161,
+    "rich_description": "<b>First Dawn</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This holiday celebrates when, on 21 Nymm 914 YK, the Church of <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>the Silver Flame</a> took control of the kingdom of Thrane and founded the theocracy that now rules the country. Every anniversary, Purified both within and beyond Thrane celebrate the church's ascension to the leader of a nation, and pay respects to the memory King Thalin of Thrane, whose death lead to the ascension of the Church.<br />"
+  },
+  {
+    "name": "Silvertide",
+    "category": "Holiday",
+    "day_number": 182,
+    "rich_description": "<b>Silvertide</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />The highest holy day in the faith, Silvertide commemorates the sacrifice of the couatl and the entry of the Silver Flame into Eberron thousands of years ago. Cathedrals fill the overflowing as all Purified who do not absolutely have to be somewhere else spend the day in prayer and observance.<br />"
   }
 ]
 }
