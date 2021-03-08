@@ -1,6 +1,6 @@
 <!-- TAKE MONTH ID TO GET MONTH FROM CALENDAR-->
 <div class="content-container">
-  <div class="background-new" style="background-color rgb(240, 240, 240);">
+  <div class="background-new">
     <div class="arrow-buttons">
       <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_previous_month(params[:month_id]), :today => @today) do %>
         <i class="fas fa-caret-left ml-3"></i>
