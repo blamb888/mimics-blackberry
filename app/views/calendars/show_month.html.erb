@@ -16,18 +16,18 @@
   <div id="month-view" class="month-card-container">
     <% #display name of month %>
     <% #container for month partials%>
-    <div id="calendar-container" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
+    <div id="calendar-container" data-controller="calendar" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
   grid-auto-flow: dense;">
-      <% @day_of_year = get_year_day_from_month(params[:month_id].to_i)%>
+      <% day_of_year = get_year_day_from_month(params[:month_id].to_i)%>
       <% day_of_month = 0 %>
       <% @today = params[:today]%>
       <% days_of_week_counter = 0 %>
       <% #iterate over every day in the current month%>
       <% @month_days.times do %>
         <% day_of_month += 1 %>
-        <% @day_of_year += 1 %>
+        <% day_of_year += 1 %>
         <%= render "calendars/day", :calendar => @calendar, :counter => day_of_month,
-      :days_of_week_counter => days_of_week_counter, :day_of_year => @day_of_year, :today => @today %>
+      :days_of_week_counter => days_of_week_counter, :day_of_year => day_of_year, :today => @today %>
         <% days_of_week_counter += 1 %>
         <% if days_of_week_counter == @calendar.weekdays.length then days_of_week_counter = 0 %>
         <% end %>
