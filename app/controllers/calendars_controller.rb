@@ -7,6 +7,7 @@ class CalendarsController < ApplicationController
     #and where calendar.users includes current_user
     # this is set in calendar_policy.rb under scope
     @calendars = policy_scope(Calendar)
+    @user = current_user
   end
 
   def show
