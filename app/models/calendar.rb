@@ -48,11 +48,11 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     date = "#{month_name} - #{day_number}"
   end
 
-  def self.new_template(template)
+  def self.new_template(template, current_user)
     case template
     when "eberron"
       @calendar = Calendar.new(
-        user: User.first,
+        user: current_user,
         name: "Eberron",
         start_day: 1,
         start_year: 1,
@@ -63,7 +63,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     end
        Event.create!(
         calendar: @calendar,
-        user: User.first,
+        user: current_user,
         name: "Rebirth Eve",
         category: "Holiday",
         day_number: 14,
@@ -71,7 +71,7 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
       )
       Event.create!(
         calendar: @calendar,
-        user: User.first,
+        user: current_user,
         name: "Bright Soul's Day",
         category: "Holiday",
         day_number: 46,

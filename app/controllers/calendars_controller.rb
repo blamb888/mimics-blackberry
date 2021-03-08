@@ -30,7 +30,7 @@ class CalendarsController < ApplicationController
 
   def create
     if params[:template].present?
-      @calendar = Calendar.new_template(params[:template])
+      @calendar = Calendar.new_template(params[:template], current_user)
     else
       @calendar = Calendar.new(calendar_params)
     end
