@@ -2,14 +2,20 @@
 .bottom-buttons {
   margin: 40px;
   display: flex;
-  width: 115%;
+  width: 90%;
   justify-content: space-between;
+}
+
+.months-card-container {
+  padding: 16px;
+  width: 85%;
+  overflow: overlay;
 }
 
 .arrow-buttons {
   margin: 32px 16px 0px 16px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .fas.fa-caret-left {
