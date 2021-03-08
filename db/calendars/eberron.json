@@ -1,0 +1,175 @@
+{
+  "calendar": {
+    "name": "Eberron",
+    "start_day": 1,
+    "start_year": 1,
+    "current_day": 1,
+    "months": {"Zarantyr": 28, "Olarune": 28, "Therendor": 28, "Eyre": 28, "Dravago": 28, "Nymm": 28, "Lharvion": 28, "Barrakas": 28, "Rhaan": 28, "Sypheros": 28, "Aryth": 28, "Vult": 28
+      },
+    "weekdays": {"Sul": 0, "Mol": 1, "Zol": 2, "Wir": 3, "Zor": 4, "Far": 5, "Sar": 6
+      }
+  },
+  "events": [{
+    "name": "Rebirth Eve",
+    "category": "Holiday",
+    "day_number": 14,
+    "rich_description": "<b>Rebirth Eve</b><br /><a href='https:\/\/eberron.fandom.com/wiki/Church_of_the_Silver_Flame' target='_blank'>The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />"
+  },
+  {
+    "name": "Bright Souls Day",
+    "category": "Holiday",
+    "day_number": 46,
+    "rich_description": "<b>Bright Souls Day</b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This Flamic festival, marking the end of winter, remembers the sacrifices and celebrates the lives of members of the church who died in the fight against evil. As it is a memorial day of sorts, practices include visiting the graves of the fallen to perform funeral rites. The faithful are forbidden to use artificial light sources for the entire day, though exceptions are made for emergencies.<br />"
+  },
+  {
+    "name": "Day of Mourning",
+    "category": "Holiday",
+    "day_number": 48,
+    "rich_description": "<b>The Day of Mourning</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest?cb=20090905064501' class='image'><img alt='City-icon.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='17' data-image-name='City-icon.jpg' data-image-key='City-icon.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest/scale-to-width-down/20?cb=20090905064501' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sharn' title='Sharn'>Sharn</a><br />The Day of Mourning, 20 Olarune 994 YK, marked the destruction of the nation of Cyre, the end of hostilities in the Last War, and the creation of the dreaded Mournland. in the years since, 20 Olarune has become a day of remembrance for the lost kingdom of Cyre, celebrated with solemn stories of those lost and traditional Cyran art forms.<br />"
+  },
+  {
+    "name": "Brightfest",
+    "category": "Holiday",
+    "day_number": 57,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Brightfest' title='Brightfest'>Brightfest</a></b><br /><a class='new' title='Shifter Holiday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGVtcGxhdGU6U2hpZnRlcl9Ib2xpZGF5P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Shifter Holiday</a>&#160;&#160;&#160;<a href='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest?cb=20090905064532' class='image'><img alt='Repeat.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='15' height='15' data-image-name='Repeat.jpg' data-image-key='Repeat.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest/scale-to-width-down/15?cb=20090905064532' class='lazyload' /></a><i>1-3 Therendor</i><br />A unique holiday celebrated by <a href='https:\/\/eberron.fandom.com/wiki/Shifter' class='mw-redirect' title='Shifters'>shifters</a>. It marks the end of winter and the coming of spring.<br /></li>"
+  },
+  {
+    "name": "Brightfest",
+    "category": "Holiday",
+    "day_number": 58,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Brightfest' title='Brightfest'>Brightfest</a></b><br /><a class='new' title='Shifter Holiday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGVtcGxhdGU6U2hpZnRlcl9Ib2xpZGF5P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Shifter Holiday</a>&#160;&#160;&#160;<a href='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest?cb=20090905064532' class='image'><img alt='Repeat.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='15' height='15' data-image-name='Repeat.jpg' data-image-key='Repeat.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest/scale-to-width-down/15?cb=20090905064532' class='lazyload' /></a><i>1-3 Therendor</i><br />A unique holiday celebrated by <a href='https:\/\/eberron.fandom.com/wiki/Shifter' class='mw-redirect' title='Shifters'>shifters</a>. It marks the end of winter and the coming of spring.<br /></li>"
+  },
+  {
+    "name": "Brightfest",
+    "category": "Holiday",
+    "day_number": 59,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Brightfest' title='Brightfest'>Brightfest</a></b><br /><a class='new' title='Shifter Holiday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGVtcGxhdGU6U2hpZnRlcl9Ib2xpZGF5P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Shifter Holiday</a>&#160;&#160;&#160;<a href='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest?cb=20090905064532' class='image'><img alt='Repeat.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='15' height='15' data-image-name='Repeat.jpg' data-image-key='Repeat.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest/scale-to-width-down/15?cb=20090905064532' class='lazyload' /></a><i>1-3 Therendor</i><br />A unique holiday celebrated by <a href='https:\/\/eberron.fandom.com/wiki/Shifter' class='mw-redirect' title='Shifters'>shifters</a>. It marks the end of winter and the coming of spring.<br /></li>"
+  },
+  {
+    "name": "Tirasday",
+    "category": "Holiday",
+    "day_number": 61,
+    "rich_description": "<b><a class='new' title='Tirasday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGlyYXNkYXk/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Tirasday</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This holiday celebrates the birth of <a href='https:\/\/eberron.fandom.com/wiki/Tira_Miron' title='Tira Miron'>Tira Miron</a>, the Voice of the Silver Flame and a key figure in the <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' title='Silver Flame'>Silver Flame</a> religion. It also celebrates the start of the spring planting season, and is a popular date to hold marriages.<br />"
+  },
+  {
+    "name": "Sun's Blessing",
+    "category": "Holiday",
+    "day_number": 71,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Sun's_Blessing' title='Sun&#39;s Blessing'>Sun's Blessing</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This is the holy day of <a href='https:\/\/eberron.fandom.com/wiki/Dol_Arrah' title='Dol Arrah'>Dol Arrah</a>, the <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' title='Sovereign Host'>Sovereign</a> of Sun and Sacrifice. It celebrates peace.<br />"
+  },
+  {
+    "name": "Initiation Day",
+    "category": "Holiday",
+    "day_number": 95,
+    "rich_description": "<b><a class='new' title='Initiation Day (page does not exist)' data-uncrawlable-url='L3dpa2kvSW5pdGlhdGlvbl9EYXk/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Initiation Day</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This is the anniversary of the day that <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>the Silver Flame</a> declared itself to be an independent from <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>the Sovereign Host</a> as opposed to an offshoot sect, as it had been considered prior. This is also the date that the first Silver Flame cathedral began construction, as it meant that Silver Flame worshipers could no longer use churches of the Sovereign Host. Because of that, this is the traditional day for beginning the construction of new cathedrals of the Silver Flame.<br />"
+  },
+  {
+    "name": "Baker's Night",
+    "category": "Holiday",
+    "day_number": 118,
+    "rich_description": "<b><a class='new' title='Baker&#39;s Night (page does not exist)' data-uncrawlable-url='L3dpa2kvQmFrZXIlMjdzX05pZ2h0P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Baker's Night</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />On the night of 6 Dravago, worshipers of the Silver Flame gather to share treats and pastries, which are specially prepared by Purified bakers. This holiday is, for obvious reasons, very popular with children. The origins of this holiday are unclear, and there are no records of any spiritual meaning. As a result, it has started to be ignored in more puritan Silver Flame communities. <br />"
+  },
+  {
+    "name": "Aureon's Crown",
+    "category": "Holiday",
+    "day_number": 138,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Aureon's_Crown' title='Aureon&#39;s Crown'>Aureon's Crown</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />A celebration of knowledge, this holiday features lectures and sermons. It has also become the secular date for graduation and commencement ceremonies.<br />"
+  },
+  {
+    "name": "Promisetide",
+    "category": "Holiday",
+    "day_number": 140,
+    "rich_description": "<b><a class='new' title='Promisetide (page does not exist)' data-uncrawlable-url='L3dpa2kvUHJvbWlzZXRpZGU/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Promisetide</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This Flamic Holiday celebrates the coming of spring and the <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame'>Silver Flame</a>'s promise of a coming paradise. On this day they also celebrate the <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' title='Sovereign Host'>Sovereign Host</a>'s role in creating the world - but they clarify that this is not a form of worship. The Sovereign Host's world was, according to Silver Flame worshipers, incomplete before the coming of the Flame. Many worshipers of the Host find this holiday to be offensive. <br />"
+  },
+  {
+    "name": "Brightblade",
+    "category": "Holiday",
+    "day_number": 152,
+    "rich_description": "<b>Brightblade</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This is the holy day of Dol Dorn, the Sovereign of Strength and Steel. As it celebrates a god of combat, festivities take the form of prizefights and athletic competitions, especially those that show skill with weaponry. Staged fights are frequent, and can be massive, with full scale staged battles made up of hundreds of warriors.<br />"
+  },
+  {
+    "name": "First Dawn",
+    "category": "Holiday",
+    "day_number": 161,
+    "rich_description": "<b>First Dawn</b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This holiday celebrates when, on 21 Nymm 914 YK, the Church of <a href'=https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>the Silver Flame</a> took control of the kingdom of Thrane and founded the theocracy that now rules the country. Every anniversary, Purified both within and beyond Thrane celebrate the church's ascension to the leader of a nation, and pay respects to the memory King Thalin of Thrane, whose death lead to the ascension of the Church.<br />"
+  },
+  {
+    "name": "Silvertide",
+    "category": "Holiday",
+    "day_number": 182,
+    "rich_description": "<b>Silvertide</b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />The highest holy day in the faith, Silvertide commemorates the sacrifice of the couatl and the entry of the Silver Flame into Eberron thousands of years ago. Cathedrals fill the overflowing as all Purified who do not absolutely have to be somewhere else spend the day in prayer and observance.<br />"
+  },
+  {
+    "name": "The Hunt",
+    "category": "Holiday",
+    "day_number": 200,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/The_Hunt_(holiday)' title='The Hunt (holiday)'>The Hunt</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This holiday is in honor of <a href='https:\/\/eberron.fandom.com/wiki/Balinor' title='Balinor'>Balinor</a> features communal hunts of dangerous creatures.<br />"
+  },
+  {
+    "name": "Victory Day",
+    "category": "Holiday",
+    "day_number": 205,
+    "rich_description": "<b><a class='new' title='Victory Day (page does not exist)' data-uncrawlable-url='L3dpa2kvVmljdG9yeV9EYXk/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Victory Day</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />Victory Day remembers the end of the the <a href=' https:\/\/eberron.fandom.com/wiki/Silver_Crusade' class='mw-redirect' title='Lycanthropic Inquisition'>lycanthropic purge</a>. Feelings surrounding this holiday tend to be mixed, with some celebrating the triumphs of the church, while others question the methods used. <br />"
+  },
+  {
+    "name": "Fathen's Fall",
+    "category": "Holiday",
+    "day_number": 221,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/Fathen's_Fall' title='Fathen&#39;s Fall'>Fathen's Fall</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest?cb=20090905064501' class='image'><img alt='City-icon.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='17' data-image-name='City-icon.jpg' data-image-key='City-icon.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest/scale-to-width-down/20?cb=20090905064501' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sharn' title='Sharn'>Sharn</a><br />Fathen's Fall honors the death of a Silver Crusader named Fathen, who's deeply successful career exposed a great number of lycanthropes living in <a href='https:\/\/eberron.fandom.com/wiki/Sharn' title='Sharn'>Sharn</a> before being torn apart by wererats. This holiday tends to be controversial, and conflicts often arise between Sharn's <a href='https:\/\/eberron.fandom.com/wiki/Shifter' title='Shifter'>shifter</a> and Silver Flame communities on this day.<br />"
+  },
+  {
+    "name": "Boldrei's Feast",
+    "category": "Holiday",
+    "day_number": 224,
+    "rich_description": "<b>Boldrei's Feast</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This feast of community is an occasion for extravagant parties, and is also the traditional day for elections.<br />"
+  },
+  {
+    "name": "The Ascension",
+    "category": "Holiday",
+    "day_number": 253,
+    "rich_description": "<b><a href='https:\/\/eberron.fandom.com/wiki/The_Ascension' title='The Ascension'>The Ascension</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This is a major holiday of the Silver Flame, which celebrates the life of <a href='https:\/\/eberron.fandom.com/wiki/Tira_Miron' title='Tira Miron'>Tira Miron</a>, who sacrificed herself to become the Voice of the SIlver Flame and in the process founded the religion. This day is celebrated with a blessing ceremony.<br />"
+  },
+  {
+    "name": "Wildnight",
+    "category": "Holiday",
+    "day_number": 270,
+    "rich_description": "<p><b>Wildnight</b> is in many ways less of a holiday and more of a superstition. <a href='https:\/\/eberron.fandom.com/wiki/The_Fury' title='The Fury'>The Fury</a>, a member of the <a href='https:\/\/eberron.fandom.com/wiki/The_Dark_Six' class='mw-redirect' title='Dark Six'>Dark Six</a> and the Sovereign of Rage and Ruin, is said to reach height of her power on this night, the 18th of <a href='https:\/\/eberron.fandom.com/wiki/Sypheros' title='Sypheros'>Sypheros</a>. Indeed, on this night people find it difficult to control their emotions and impulses. While some superstitious and introverted folk stay inside on this night, many use it as an excuse for partying, revelry, and riots. Whether this is due to a genuine magical effect on this night, or if it is simply a self-fulfilling prophecy, is unclear.</p>"
+  },
+  {
+    "name": "Wildnight",
+    "category": "Holiday",
+    "day_number": 271,
+    "rich_description": "<p><b>Wildnight</b> is in many ways less of a holiday and more of a superstition. <a href='https:\/\/eberron.fandom.com/wiki/The_Fury' title='The Fury'>The Fury</a>, a member of the <a href='https:\/\/eberron.fandom.com/wiki/The_Dark_Six' class='mw-redirect' title='Dark Six'>Dark Six</a> and the Sovereign of Rage and Ruin, is said to reach height of her power on this night, the 18th of <a href='https:\/\/eberron.fandom.com/wiki/Sypheros' title='Sypheros'>Sypheros</a>. Indeed, on this night people find it difficult to control their emotions and impulses. While some superstitious and introverted folk stay inside on this night, many use it as an excuse for partying, revelry, and riots. Whether this is due to a genuine magical effect on this night, or if it is simply a self-fulfilling prophecy, is unclear.</p>"
+  },
+  {
+    "name": "Rampartide",
+    "category": "Holiday",
+    "day_number": 304,
+    "rich_description": "<b><a class='new' title='Rampartide (page does not exist)' data-uncrawlable-url='L3dpa2kvUmFtcGFydGlkZT9hY3Rpb249ZWRpdCZyZWRsaW5rPTE=' rel='nofollow'>Rampartide</a></b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This is a solemn holiday where worshipers of the <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' title='Silver Flame'>Silver Flame</a> fast and do repentance in preparation to face the evils of winter.<br />"
+  },
+  {
+    "name": "Long Shadows",
+    "category": "Holiday",
+    "day_number": 334,
+    "rich_description": "<b><i>26–28 Vult</i><br />The three nights of Long Shadows occur in Vult each year. It is said that <a href='https:\/\/eberron.fandom.com/wiki/The_Shadow' title='The Shadow'>the Shadow</a>, a member of the Dark Six, enhances dark magic on these nights. Regardless of if the Shadow is actually the cause, dark magic is certainly enhanced. As a result, the common folk of Khorvaire have a tradition of staying indoors with their families on these nights. Either because of its connection to the Shadow, or because everyone else is indoors, worshipers of the Shadow rise up on this night to practice their craft.<br />"
+  },
+  {
+    "name": "Long Shadows",
+    "category": "Holiday",
+    "day_number": 335,
+    "rich_description": "<b><i>26–28 Vult</i><br />The three nights of Long Shadows occur in Vult each year. It is said that <a href='https:\/\/eberron.fandom.com/wiki/The_Shadow' title='The Shadow'>the Shadow</a>, a member of the Dark Six, enhances dark magic on these nights. Regardless of if the Shadow is actually the cause, dark magic is certainly enhanced. As a result, the common folk of Khorvaire have a tradition of staying indoors with their families on these nights. Either because of its connection to the Shadow, or because everyone else is indoors, worshipers of the Shadow rise up on this night to practice their craft.<br />"
+  },
+  {
+    "name": "Long Shadows",
+    "category": "Holiday",
+    "day_number": 336,
+    "rich_description": "<b><i>26–28 Vult</i><br />The three nights of Long Shadows occur in Vult each year. It is said that <a href='https:\/\/eberron.fandom.com/wiki/The_Shadow' title='The Shadow'>the Shadow</a>, a member of the Dark Six, enhances dark magic on these nights. Regardless of if the Shadow is actually the cause, dark magic is certainly enhanced. As a result, the common folk of Khorvaire have a tradition of staying indoors with their families on these nights. Either because of its connection to the Shadow, or because everyone else is indoors, worshipers of the Shadow rise up on this night to practice their craft.<br />"
+  },
+  {
+    "name": "Khybersef",
+    "category": "Holiday",
+    "day_number": 335,
+    "rich_description": "<b>Khybersef</b><br /><a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='https:\/\/eberron.fandom.com/wiki/Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />Long ago called 'Khyber's Eve,' this is when worshipers of the Silver Flame mark the beginning of winter. It is believed that Winter is when dark god, the Shadow, is strongest. The Church of the Silver Flame also believes that this is when the forces holding the Overlords trapped in Khyber are at their weakest.<br />"
+  }
+]
+}

@@ -1,0 +1,9 @@
+<% if policy(UserCalendar).create? %>
+  <%= simple_form_for :add_user_params, url: calendar_user_calendars_path(@calendar), method: :create do |f| %>
+    <%= f.input :email,
+                required: false,
+                autofocus: true %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= f.submit "Add Player", class: "btn btn-primary mb-3"%>
+  <% end %>
+<% end %>

@@ -1,5 +1,6 @@
 class Calendar < ApplicationRecord
   belongs_to :user
+  has_many :user_calendars, dependent: :destroy
   has_many :users, through: :user_calendars
   has_many :events, dependent: :destroy
 
@@ -8,6 +9,8 @@ class Calendar < ApplicationRecord
   validates :months, presence: true
   validates :weekdays, presence: true
   validates :name, presence: true
+  # validates :title, presence: true
+  # validates :description, presence: true
 
 def calculate_date(target_day) #TODO maybe I could refactor this.
     @calendar = self
@@ -48,18 +51,36 @@ def calculate_date(target_day) #TODO maybe I could refactor this.
     date = "#{month_name} - #{day_number}"
   end
 
-  def self.new_template(template)
+  def self.new_template(template, current_user)
     case template
     when "eberron"
-      Calendar.new(
-        name: "Eberron",
-        start_day: 1,
-        start_year: 1,
-        current_day: 1,
-        months: {Zarantyr: 28, Olarune: 28, Therendor: 28, Eyre: 28, Dravago: 28, Nymm: 28, Lharvion: 28, Barrakas: 28, Rhaan: 28, Sypheros: 28, Aryth: 28, Vult: 28 },
-        weekdays:{Sul: 0, Mol: 1, Zol: 2, Wir: 3, Zor: 4, Far: 5, Sar: 6}
-      )
+      # @calendar = Calendar.new(
+        # user: current_user,
+        # name: "Eberron",
+        # start_day: 1,
+        # start_year: 1,
+        # current_day: 1,
+        # months: {Zarantyr: 28, Olarune: 28, Therendor: 28, Eyre: 28, Dravago: 28, Nymm: 28, Lharvion: 28, Barrakas: 28, Rhaan: 28, Sypheros: 28, Aryth: 28, Vult: 28 },
+        # weekdays:{Sul: 0, Mol: 1, Zol: 2, Wir: 3, Zor: 4, Far: 5, Sar: 6}
+      # )
+      SetupCalendarService.new(current_user, template).call
     end
+      #  Event.create!(
+      #   calendar: @calendar,
+      #   user: current_user,
+        # name: "Rebirth Eve",
+        # category: "Holiday",
+        # day_number: 14,
+        # rich_description: '<b>Rebirth Eve</b><br /><a href="https://eberron.fandom.com/wiki/Church_of_the_Silver_Flame" target="_blank">The Silver Flame</a><br />This flamic festival, which takes the form of a spiritual vigil, celebrates the winter solstice.<br />'
+      # )
+      # Event.create!(
+      #   calendar: @calendar,
+      #   user: current_user,
+      #   name: "Bright Soul's Day",
+      #   category: "Holiday",
+      #   day_number: 46,
+      #   rich_description: '<b>Bright Souls Day</b><br /><a href="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640" class="image"><img alt="Silver-flame.jpg" src="data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D" decoding="async" width="20" height="22" data-image-name="Silver-flame.jpg" data-image-key="Silver-flame.jpg" data-src="https://static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640" class="lazyload" /></a> <a href="/wiki/The_Silver_Flame" class="mw-redirect" title="The Silver Flame">The Silver Flame</a><br />This Flamic festival, marking the end of winter, remembers the sacrifices and celebrates the lives of members of the church who died in the fight against evil. As it is a memorial day of sorts, practices include visiting the graves of the fallen to perform funeral rites. The faithful are forbidden to use artificial light sources for the entire day, though exceptions are made for emergencies.<br />'
+      # )
   end
 
   def get_next_month(month_index)

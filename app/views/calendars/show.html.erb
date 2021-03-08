@@ -1,13 +1,17 @@
 <div class="background-new">
+  <div class="delete-button">
+    <div>
+      <%= link_to edit_calendar_path(@calendar) do %>
+        <i class="fas fa-hand-sparkles"></i>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to calendar_path(@calendar), method: :delete, data: { confirm: "Are you sure you want to delete it?" }, style: "" do %>
+        <i class="fas fa-calendar-times"></i>
+      <% end %>
+    </div>
+  </div>
   <div class="container">
-    <!--
-  <h6>Calendar Creator: <%= @calendar.user.email %></h6>
-  <h6>Start Day:<%= @calendar.start_day %></h6>
-  <h6>Start Year:<%= @calendar.start_year %></h6>
-  <h6>Current Day:<%= @calendar.current_day %></h6>
-  <h6>Months:<%= @calendar.months %></h6>
-  <h6>Weekdays:<%= @calendar.weekdays %></h6>
-  -->
     <div class="month-card-container">
       <h4><strong>Eberron<span></span></strong></h4>
       <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
@@ -29,6 +33,11 @@
       <% end %>
     </div>
     <div>
+    <% #TEST ADD PLAYER BUTTON%>
+      <div class="d-flex">
+        <i class="far fa-calendar-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal"></i>
+        <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
+      </div>
       <%= link_to calendars_path do %>
         <i class="fas fa-home"></i>
       <% end %>

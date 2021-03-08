@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_03_090927) do
+ActiveRecord::Schema.define(version: 2021_03_08_065429) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,8 @@ ActiveRecord::Schema.define(version: 2021_03_03_090927) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
+    t.string "title"
+    t.text "description"
     t.index ["user_id"], name: "index_calendars_on_user_id"
   end
 
@@ -80,6 +82,23 @@ ActiveRecord::Schema.define(version: 2021_03_03_090927) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["calendar_id"], name: "index_events_on_calendar_id"
     t.index ["user_id"], name: "index_events_on_user_id"
+  end
+
+  create_table "notifications", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "actor_id"
+    t.string "notify_type", null: false
+    t.string "target_type"
+    t.bigint "target_id"
+    t.string "second_target_type"
+    t.bigint "second_target_id"
+    t.string "third_target_type"
+    t.bigint "third_target_id"
+    t.datetime "read_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "notify_type"], name: "index_notifications_on_user_id_and_notify_type"
+    t.index ["user_id"], name: "index_notifications_on_user_id"
   end
 
   create_table "user_calendars", force: :cascade do |t|
