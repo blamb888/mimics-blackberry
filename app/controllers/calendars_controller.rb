@@ -1,5 +1,6 @@
 class CalendarsController < ApplicationController
-  before_action :find_calendar, only: [:show, :destroy]
+  before_action :find_calendar, only: [:show, :update, :destroy]
+
   helper_method :find_day_events, :get_year_day_from_month
 
   def index
@@ -11,10 +12,16 @@ class CalendarsController < ApplicationController
   end
 
   def show
-    @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
     @user_calendar = UserCalendar.new
+  end
+
+  def update
+    @calendar.update(calendar_params)
+    respond_to do |format|
+      format.js
+    end
   end
 
   def show_month
