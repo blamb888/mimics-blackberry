@@ -1,49 +1,51 @@
 <!-- TAKE MONTH ID TO GET MONTH FROM CALENDAR-->
-<div class="background-new" style="background-color rgb(240, 240, 240);">
-  <div class="arrow-buttons">
-    <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_previous_month(params[:month_id]), :today => @today) do %>
-      <i class="fas fa-caret-left"></i>
-    <% end %>
-    <!-- <h1 class="month-title mb-3"> -->
-    <!-- counter = 0
+<div class="content-container">
+  <div class="background-new">
+    <div class="arrow-buttons">
+      <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_previous_month(params[:month_id]), :today => @today) do %>
+        <i class="fas fa-caret-left ml-3"></i>
+      <% end %>
+      <!-- <h1 class="month-title mb-3"> -->
+      <!-- counter = 0
     if counter <= 12 -->
-    <h4><strong><%= @month_name %><span></span></strong></h4>
-    <!-- </h1> -->
-    <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_next_month(params[:month_id]), :today => @today) do %>
-      <i class="fas fa-caret-right"></i>
-    <% end %>
-  </div>
-  <div id="month-view" class="month-card-container">
-    <% #display name of month %>
-    <% #container for month partials%>
-    <div id="calendar-container" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
+      <h4><strong><%= @month_name %><span></span></strong></h4>
+      <!-- </h1> -->
+      <%= link_to month_view_calendar_path(@calendar, :month_id => @calendar.get_next_month(params[:month_id]), :today => @today) do %>
+        <i class="fas fa-caret-right mr-3"></i>
+      <% end %>
+    </div>
+    <div id="month-view" class="month-card-container">
+      <% #display name of month %>
+      <% #container for month partials%>
+      <div id="calendar-container" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
   grid-auto-flow: dense;">
-      <% @day_of_year = get_year_day_from_month(params[:month_id].to_i)%>
-      <% day_of_month = 0 %>
-      <% @today = params[:today]%>
-      <% days_of_week_counter = 0 %>
-      <% #iterate over every day in the current month%>
-      <% @month_days.times do %>
-        <% day_of_month += 1 %>
-        <% @day_of_year += 1 %>
-        <%= render "calendars/day", :calendar => @calendar, :counter => day_of_month,
+        <% @day_of_year = get_year_day_from_month(params[:month_id].to_i)%>
+        <% day_of_month = 0 %>
+        <% @today = params[:today]%>
+        <% days_of_week_counter = 0 %>
+        <% #iterate over every day in the current month%>
+        <% @month_days.times do %>
+          <% day_of_month += 1 %>
+          <% @day_of_year += 1 %>
+          <%= render "calendars/day", :calendar => @calendar, :counter => day_of_month,
       :days_of_week_counter => days_of_week_counter, :day_of_year => @day_of_year, :today => @today %>
-        <% days_of_week_counter += 1 %>
-        <% if days_of_week_counter == @calendar.weekdays.length then days_of_week_counter = 0 %>
+          <% days_of_week_counter += 1 %>
+          <% if days_of_week_counter == @calendar.weekdays.length then days_of_week_counter = 0 %>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
-  </div>
-  <div class="bottom-buttons">
-    <div>
-      <%= link_to calendar_path(@calendar) do %>
-        <i class="fas fa-chevron-circle-left"></i>
-      <% end %>
-    </div>
-    <div>
-      <%= link_to calendars_path do %>
-        <i class="fas fa-home"></i>
-      <% end %>
+    <div class="bottom-buttons">
+      <div>
+        <%= link_to calendar_path(@calendar) do %>
+          <i class="fas fa-chevron-circle-left"></i>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to calendars_path do %>
+          <i class="fas fa-home"></i>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
