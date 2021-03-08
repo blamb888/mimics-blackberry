@@ -11,7 +11,6 @@ class SetupCalendarService
     @calendar = create_calendar
     create_events
     @calendar
-    raise
   end
 
   def create_calendar
