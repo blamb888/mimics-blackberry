@@ -3,13 +3,18 @@ class CalendarsController < ApplicationController
   helper_method :find_day_events, :get_year_day_from_month
 
   def index
-    @calendars = policy_scope(Calendar).order(created_at: :desc)
+    #shows calendars where current user is calendar.user
+    #and where calendar.users includes current_user
+    # this is set in calendar_policy.rb under scope
+    @calendars = policy_scope(Calendar)
+    @user = current_user
   end
 
   def show
     @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
+    @user_calendar = UserCalendar.new
   end
 
   def show_month
