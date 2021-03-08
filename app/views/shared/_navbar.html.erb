@@ -10,10 +10,10 @@
       <% if user_signed_in? %>
       <% #notification dropdown%>
         <li class="nav-item dropdown">
-          <i class="fas fa-bell dropdown-toggle", id= "navbarDropdown", data-toggle= "dropdown", aria-haspopup="true", aria-expanded="false"></i>
+          <i class="fas fa-bell nav-link dropdown-toggle", style="color: white", id= "navbarDropdown", data-toggle= "dropdown", aria-haspopup="true", aria-expanded="false"></i>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationDropdown">
             <% current_user.notifications.each do |n| %>
-              <%= link_to "#{n.actor.email} added you to #{n.target_type}", calendar_path(n.target) %>
+              <%= link_to "#{n.actor.email} added you to #{n.target.name}", calendar_path(n.target) %>
             <% end %>
           </div>
         </li>
