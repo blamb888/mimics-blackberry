@@ -102,3 +102,9 @@
   color: red;
   opacity: .5;
 }
+
+.delete-button {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
