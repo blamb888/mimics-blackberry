@@ -116,6 +116,30 @@
     "category": "Holiday",
     "day_number": 221,
     "rich_description": "<b><a href='/wiki/Fathen%27s_Fall' title='Fathen&#39;s Fall'>Fathen's Fall</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest?cb=20090905064501' class='image'><img alt='City-icon.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='17' data-image-name='City-icon.jpg' data-image-key='City-icon.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/7/7f/City-icon.jpg/revision/latest/scale-to-width-down/20?cb=20090905064501' class='lazyload' /></a> <a href='/wiki/Sharn' title='Sharn'>Sharn</a><br />Fathen's Fall honors the death of a Silver Crusader named Fathen, who's deeply successful career exposed a great number of lycanthropes living in <a href='/wiki/Sharn' title='Sharn'>Sharn</a> before being torn apart by wererats. This holiday tends to be controversial, and conflicts often arise between Sharn's <a href='/wiki/Shifter' title='Shifter'>shifter</a> and Silver Flame communities on this day.<br />"
+  },
+  {
+    "name": "Boldrei's Feast",
+    "category": "Holiday",
+    "day_number": 224,
+    "rich_description": "<b>Boldrei's Feast</b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This feast of community is an occasion for extravagant parties, and is also the traditional day for elections.<br />"
+  },
+  {
+    "name": "The Ascension",
+    "category": "Holiday",
+    "day_number": 253,
+    "rich_description": "<b><a href='/wiki/The_Ascension' title='The Ascension'>The Ascension</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This is a major holiday of the Silver Flame, which celebrates the life of <a href='/wiki/Tira_Miron' title='Tira Miron'>Tira Miron</a>, who sacrificed herself to become the Voice of the SIlver Flame and in the process founded the religion. This day is celebrated with a blessing ceremony.<br />"
+  },
+  {
+    "name": "Wildnight",
+    "category": "Holiday",
+    "day_number": 270,
+    "rich_description": "<p><b>Wildnight</b> is in many ways less of a holiday and more of a superstition. <a href='/wiki/The_Fury' title='The Fury'>The Fury</a>, a member of the <a href='/wiki/Dark_Six' class='mw-redirect' title='Dark Six'>Dark Six</a> and the Sovereign of Rage and Ruin, is said to reach height of her power on this night, the 18th of <a href='/wiki/Sypheros' title='Sypheros'>Sypheros</a>. Indeed, on this night people find it difficult to control their emotions and impulses. While some superstitious and introverted folk stay inside on this night, many use it as an excuse for partying, revelry, and riots. Whether this is due to a genuine magical effect on this night, or if it is simply a self-fulfilling prophecy, is unclear.</p>"
+  },
+  {
+    "name": "Wildnight",
+    "category": "Holiday",
+    "day_number": 271,
+    "rich_description": "<p><b>Wildnight</b> is in many ways less of a holiday and more of a superstition. <a href='/wiki/The_Fury' title='The Fury'>The Fury</a>, a member of the <a href='/wiki/Dark_Six' class='mw-redirect' title='Dark Six'>Dark Six</a> and the Sovereign of Rage and Ruin, is said to reach height of her power on this night, the 18th of <a href='/wiki/Sypheros' title='Sypheros'>Sypheros</a>. Indeed, on this night people find it difficult to control their emotions and impulses. While some superstitious and introverted folk stay inside on this night, many use it as an excuse for partying, revelry, and riots. Whether this is due to a genuine magical effect on this night, or if it is simply a self-fulfilling prophecy, is unclear.</p>"
   }
 ]
 }
