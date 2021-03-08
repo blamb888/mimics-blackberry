@@ -65,24 +65,28 @@ content: " ";
 display: block;
 border-bottom: 3px solid rgb(117,226,215);
 }
+.arrow-buttons {
+  width: 100%;
+}
 
-h4 {
+.arrow-buttons h4 {
 text-align:center;
-display: grid;
-grid-template-columns: 200px max-content 200px;
-grid-template-rows: 15px 0;
-grid-gap: 20px;
+width: 100%;
+display: flex;
 justify-content:center;
 font-size: 25px;
 color: rgb(27,40,54);
 font-family: 'Uncial Antiqua', cursive;
+align-items: center;
+  &:after,&:before {
+    content: " ";
+    flex-grow: 1;
+    display: block;
+    border-bottom: 3px solid rgb(117,226,215);
+    margin: 0 1em;
+  }
 }
 
-h4:after,h4:before {
-content: " ";
-display: block;
-border-bottom: 3px solid rgb(117,226,215);
-}
 
 .background-index {
   display: flex;
@@ -138,7 +142,7 @@ border-bottom: 3px solid rgb(117,226,215);
   position: relative;
   float: left;
   overflow: hidden;
-  width: 100%;
+  // width: 100%;
   text-align: center;
   border:none;
   border-radius: 5px;
@@ -184,7 +188,6 @@ border-bottom: 3px solid rgb(117,226,215);
 .profile-card-3 .profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 55%;
   left: 50%;
   max-width: 100px;
   opacity: 1;
@@ -193,6 +196,7 @@ border-bottom: 3px solid rgb(117,226,215);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   z-index:99999;
+  top: 20%;
 }
 .profile-card-3 h2 {
   margin: 0 0 5px;

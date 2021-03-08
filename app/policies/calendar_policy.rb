@@ -3,16 +3,16 @@ class CalendarPolicy < ApplicationPolicy
 
 
     def resolve
-      scope.all
+      user.all_calendars
     end
   end
 
   def show?
-    record.user == user
+    user.all_calendars.include?(record)
   end
   
   def show_month?
-    record.user == user
+    user.all_calendars.include?(record)
   end
 
     def new?

@@ -1,15 +1,27 @@
 class CalendarsController < ApplicationController
-  before_action :find_calendar, only: [:show, :destroy]
+  before_action :find_calendar, only: [:show, :update, :destroy]
+
   helper_method :find_day_events, :get_year_day_from_month
 
   def index
-    @calendars = policy_scope(Calendar).order(created_at: :desc)
+    #shows calendars where current user is calendar.user
+    #and where calendar.users includes current_user
+    # this is set in calendar_policy.rb under scope
+    @calendars = policy_scope(Calendar)
+    @user = current_user
   end
 
   def show
-    @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
+    @user_calendar = UserCalendar.new
+  end
+
+  def update
+    @calendar.update(calendar_params)
+    respond_to do |format|
+      format.js
+    end
   end
 
   def show_month
@@ -30,7 +42,7 @@ class CalendarsController < ApplicationController
 
   def create
     if params[:template].present?
-      @calendar = Calendar.new_template(params[:template])
+      @calendar = Calendar.new_template(params[:template], current_user)
     else
       @calendar = Calendar.new(calendar_params)
     end
