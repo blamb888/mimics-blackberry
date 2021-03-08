@@ -3,7 +3,7 @@ class CalendarPolicy < ApplicationPolicy
 
 
     def resolve
-      scope.all
+      user.all_calendars
     end
   end
 
