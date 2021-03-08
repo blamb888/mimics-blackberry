@@ -9,9 +9,13 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
+        <% #notification bell %>
           <%= link_to root_path, class: "nav-link", style:"color: white;" do %>
             <i class="fas fa-bell"></i>
           <% end %>
+        </li>
+        <li>
+          <p><%= Notification.unread_count(current_user) %></p>
         </li>
         <li class="nav-item mx-1">
           <%= link_to calendars_path, class: "nav-link color", style:"color: white;" do %>
