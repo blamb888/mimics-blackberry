@@ -41,16 +41,34 @@
           <div class="cards">
             <% @calendars.each do |calendar| %>
               <%= link_to calendar_path(calendar) do %>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>)">
-                  Eberron
+                <div class="card-trip">
+                  <div class="card-trip-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>);height: 130px; border-radius: 2px;">
+                    <span>
+                      <h2>Eberron</h2>
+                    </span>
+                  </div>
+                  <div class="card-trip-infos">
+                    <div>
+                      <h3>Title here</h3>
+                      <p>Short description here! ajhsfvjahs vfasjhfvasjfhv</p>
+                    </div>
+                  </div>
                 </div>
               <% end %>
             <% end %>
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'middleearth.jpg' %>)">
-              <span>
-                <h2>Middle </h2>
-                <h2>Earth</h2>
-              </span>
+            <div class="card-trip">
+              <div class="card-trip-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'middleearth.jpg' %>);height: 130px; border-radius: 2px;">
+                <span>
+                  <h2>Middle </h2>
+                  <h2>Earth</h2>
+                </span>
+              </div>
+              <div class="card-trip-infos">
+                <div>
+                  <h3>Title here</h3>
+                  <p>Short description here! ajhsfvjahs vfasjhfvasjfhv</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

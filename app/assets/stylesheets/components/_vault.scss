@@ -233,3 +233,59 @@ border-bottom: 3px solid rgb(117,226,215);
   background-color: transparent;
   font-weight: 30px;
 }
+
+
+// .card-trip {
+//   overflow: hidden;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+// }
+.card-trip {
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(40, 40, 40, .5);
+  margin-bottom: 10px;
+  width: 270px;
+  height: 195px;
+}
+
+.card-trip-image {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+     & h2 {
+       font-size: 26px;
+       font-weight: bold;
+       text-shadow: 1px 1px px rgba(0,0,0,0.4);
+       border-radius: 5px;
+       font-family: 'Uncial Antiqua', cursive;
+       color: white;
+     }
+}
+
+.card-trip h3 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
