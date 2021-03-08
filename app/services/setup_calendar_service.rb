@@ -30,7 +30,6 @@ class SetupCalendarService
   def create_events
     serialized_calendar = File.read(@file_path)
     info = JSON.parse(serialized_calendar, symbolize_names: true)
-    # rich_description = info[:events][0][:rich_description]
       info[:events].each do |event|
         Event.create!(
           calendar: @calendar,
