@@ -1,15 +1,20 @@
 class CalendarsController < ApplicationController
-  before_action :find_calendar, only: [:show]
+  before_action :find_calendar, only: [:show, :destroy]
   helper_method :find_day_events, :get_year_day_from_month
 
   def index
-    @calendars = policy_scope(Calendar).order(created_at: :desc)
+    #shows calendars where current user is calendar.user
+    #and where calendar.users includes current_user
+    # this is set in calendar_policy.rb under scope
+    @calendars = policy_scope(Calendar)
+    @user = current_user
   end
 
   def show
     @calendar = Calendar.find(params[:id])
     @events = Event.where(:calendar_id == @calendar)
     @event = Event.new
+    @user_calendar = UserCalendar.new
   end
 
   def show_month
@@ -43,6 +48,24 @@ class CalendarsController < ApplicationController
     end
   end
 
+  def edit
+    @calendar = Calendar.find(params[:id])
+    authorize @calendar
+  end
+
+  def update
+    @calendar = Calendar.find(params[:id])
+    @calendar.update(calendar_params)
+    authorize @calendar
+    redirect_to calendars_path
+  end
+
+  def destroy
+    @calendar.user = current_user
+    Calendar.destroy(params[:id])
+    redirect_to calendars_path
+  end
+
   def find_day_events(events, day)
     day_events = []
     events.each do |e|
@@ -74,7 +97,7 @@ class CalendarsController < ApplicationController
   end
 
   def calendar_params
-    params.require(:calendar).permit(:name, :start_day, :start_year, :current_day, :months, :weekdays, :user)
+    params.require(:calendar).permit(:name, :start_day, :start_year, :current_day, :months, :weekdays, :user, :title, :description)
   end
 
   # def calculate_date(target_day)

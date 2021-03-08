@@ -11,7 +11,7 @@
     </li>
   </ul>
 </div>
-<div class="background-index" style="background-color rgb(240, 240, 240);">
+<div class="background-index">
   <h6><strong>Recent Games<span></span></strong></h6>
   <div class="container-index mt-1">
     <div class="col-md-3">
@@ -23,7 +23,7 @@
           <img src="<%= image_path 'Bilyur_token_2.png' %>" alt="profile-image" class="profile"/>
         </div>
         <div class="card-content">
-          <h2>Brandon<small>Wiley Wizard</small></h3>
+          <h2><%= @user.email %><small>Wiley Wizard</small></h3>
           <ul style="list-style: none;">
             <li><%= link_to 'Plus' %> | <%= link_to 'Manage Subscription' %></li>
             <li><%= link_to 'Help Center' %></li>
@@ -31,7 +31,7 @@
             <li>Hours Played: 951</li>
           </ul>
           <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
-          <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none" %>
+          <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none", style: "width: 80%;" %>
         </div>
       </div>
     </div>
@@ -41,16 +41,39 @@
           <div class="cards">
             <% @calendars.each do |calendar| %>
               <%= link_to calendar_path(calendar) do %>
-                <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>)">
-                  Eberron
+                <div class="card-trip">
+                  <div class="card-trip-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'eberron.jpg' %>);height: 130px; border-radius: 2px;">
+                    <span>
+                      <h2><%= calendar.name %></h2>
+                    </span>
+                  </div>
+                  <div class="card-trip-infos">
+                    <div>
+                      <% if calendar.title != nil && calendar.description != nil %>
+                        <h3><%= calendar.title %></h3>
+                        <p><em><%= calendar.description %></em></p>
+                      <% else %>
+                        <h3>Add Game Title</h3>
+                        <p><em>Add Game Description</em></p>
+                      <% end %>
+                    </div>
+                  </div>
                 </div>
               <% end %>
             <% end %>
-            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'middleearth.jpg' %>)">
-              <span>
-                <h2>Middle </h2>
-                <h2>Earth</h2>
-              </span>
+            <div class="card-trip">
+              <div class="card-trip-image" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(<%= image_path 'middleearth.jpg' %>);height: 130px; border-radius: 2px;">
+                <span>
+                  <h2>Middle </h2>
+                  <h2>Earth</h2>
+                </span>
+              </div>
+              <div class="card-trip-infos">
+                <div>
+                  <h3>Add Game Title</h3>
+                  <p><em>Add Game Description</em></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

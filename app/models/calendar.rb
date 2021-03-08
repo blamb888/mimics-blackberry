@@ -1,5 +1,6 @@
 class Calendar < ApplicationRecord
   belongs_to :user
+  has_many :user_calendars, dependent: :destroy
   has_many :users, through: :user_calendars
   has_many :events, dependent: :destroy
 
@@ -8,6 +9,8 @@ class Calendar < ApplicationRecord
   validates :months, presence: true
   validates :weekdays, presence: true
   validates :name, presence: true
+  # validates :title, presence: true
+  # validates :description, presence: true
 
 def calculate_date(target_day) #TODO maybe I could refactor this.
     @calendar = self
