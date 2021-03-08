@@ -44,6 +44,36 @@
     "category": "Holiday",
     "day_number": 59,
     "rich_description": "<b><a href='/wiki/Brightfest' title='Brightfest'>Brightfest</a></b><br /><a class='new' title='Template:Shifter Holiday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGVtcGxhdGU6U2hpZnRlcl9Ib2xpZGF5P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Template:Shifter Holiday</a>&#160;&#160;&#160;<a href='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest?cb=20090905064532' class='image'><img alt='Repeat.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='15' height='15' data-image-name='Repeat.jpg' data-image-key='Repeat.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/4/4a/Repeat.jpg/revision/latest/scale-to-width-down/15?cb=20090905064532' class='lazyload' /></a><i>1-3 Therendor</i><br />A unique holiday celebrated by <a href='/wiki/Shifters' class='mw-redirect' title='Shifters'>shifters</a>. It marks the end of winter and the coming of spring.<br /></li>"
+  },
+  {
+    "name": "Tirasday",
+    "category": "Holiday",
+    "day_number": 61,
+    "rich_description": "<b><a class='new' title='Tirasday (page does not exist)' data-uncrawlable-url='L3dpa2kvVGlyYXNkYXk/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Tirasday</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This holiday celebrates the birth of <a href='/wiki/Tira_Miron' title='Tira Miron'>Tira Miron</a>, the Voice of the Silver Flame and a key figure in the <a href='/wiki/Silver_Flame' title='Silver Flame'>Silver Flame</a> religion. It also celebrates the start of the spring planting season, and is a popular date to hold marriages.<br />"
+  },
+  {
+    "name": "Sun's Blessing",
+    "category": "Holiday",
+    "day_number": 71,
+    "rich_description": "<b><a href='/wiki/Sun%27s_Blessing' title='Sun&#39;s Blessing'>Sun's Blessing</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />This is the holy day of <a href='/wiki/Dol_Arrah' title='Dol Arrah'>Dol Arrah</a>, the <a href='/wiki/Sovereign_Host' title='Sovereign Host'>Sovereign</a> of Sun and Sacrifice. It celebrates peace.<br />"
+  },
+  {
+    "name": "Initiation Day",
+    "category": "Holiday",
+    "day_number": 95,
+    "rich_description": "<b><a class='new' title='Initiation Day (page does not exist)' data-uncrawlable-url='L3dpa2kvSW5pdGlhdGlvbl9EYXk/YWN0aW9uPWVkaXQmcmVkbGluaz0x' rel='nofollow'>Initiation Day</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />This is the anniversary of the day that <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>the Silver Flame</a> declared itself to be an independent from <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>the Sovereign Host</a> as opposed to an offshoot sect, as it had been considered prior. This is also the date that the first Silver Flame cathedral began construction, as it meant that Silver Flame worshipers could no longer use churches of the Sovereign Host. Because of that, this is the traditional day for beginning the construction of new cathedrals of the Silver Flame.<br />"
+  },
+  {
+    "name": "Baker's Night",
+    "category": "Holiday",
+    "day_number": 118,
+    "rich_description": "<b><a class='new' title='Baker&#39;s Night (page does not exist)' data-uncrawlable-url='L3dpa2kvQmFrZXIlMjdzX05pZ2h0P2FjdGlvbj1lZGl0JnJlZGxpbms9MQ==' rel='nofollow'>Baker's Night</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest?cb=20090905064640' class='image'><img alt='Silver-flame.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='22' data-image-name='Silver-flame.jpg' data-image-key='Silver-flame.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/5/55/Silver-flame.jpg/revision/latest/scale-to-width-down/20?cb=20090905064640' class='lazyload' /></a> <a href='/wiki/The_Silver_Flame' class='mw-redirect' title='The Silver Flame'>The Silver Flame</a><br />On the night of 6 Dravago, worshipers of the Silver Flame gather to share treats and pastries, which are specially prepared by Purified bakers. This holiday is, for obvious reasons, very popular with children. The origins of this holiday are unclear, and there are no records of any spiritual meaning. As a result, it has started to be ignored in more puritan Silver Flame communities. <br />"
+  },
+  {
+    "name": "Aureon's Crown",
+    "category": "Holiday",
+    "day_number": 138,
+    "rich_description": "<b><a href='/wiki/Aureon%27s_Crown' title='Aureon&#39;s Crown'>Aureon's Crown</a></b><br /><a href='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest?cb=20090905065033' class='image'><img alt='TheSovereignHost.jpg' src='data:image/gif;base64,R0lGODlhAQABAIABAAAAAP\/\/\/yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D' decoding='async' width='20' height='20' data-image-name='TheSovereignHost.jpg' data-image-key='TheSovereignHost.jpg' data-src='https:\/\/static.wikia.nocookie.net/eberron/images/c/c5/TheSovereignHost.jpg/revision/latest/scale-to-width-down/20?cb=20090905065033' class='lazyload' /></a> <a href='/wiki/The_Sovereign_Host' class='mw-redirect' title='The Sovereign Host'>The Sovereign Host</a><br />A celebration of knowledge, this holiday features lectures and sermons. It has also become the secular date for graduation and commencement ceremonies.<br />"
   }
 ]
 }
