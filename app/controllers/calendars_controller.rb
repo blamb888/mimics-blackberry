@@ -1,5 +1,5 @@
 class CalendarsController < ApplicationController
-  before_action :find_calendar, only: [:show]
+  before_action :find_calendar, only: [:show, :destroy]
   helper_method :find_day_events, :get_year_day_from_month
 
   def index
@@ -41,6 +41,12 @@ class CalendarsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @calendar.user = current_user
+    Calendar.destroy(params[:id])
+    redirect_to calendars_path
   end
 
   def find_day_events(events, day)

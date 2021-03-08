@@ -80,6 +80,8 @@
   color: rgb(117,226,215);
 }
 
+
+
 .fas.fa-chevron-circle-left:hover {
   font-size: 32px;
   color: rgb(65,189,211);
@@ -88,4 +90,15 @@
 .fas.fa-home:hover {
   font-size: 32px;
   color: rgb(65,189,211);
+}
+
+.fas.fa-calendar-times {
+  color: red;
+    font-size: 28px;
+    opacity: .4;
+}
+
+.fas.fa-calendar-times:hover {
+  color: red;
+  opacity: .5;
 }
