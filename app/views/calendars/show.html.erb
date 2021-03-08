@@ -27,6 +27,11 @@
       <% end %>
     </div>
     <div>
+    <% #TEST ADD PLAYER BUTTON%>
+      <div class="d-flex">
+        <i class="far fa-calendar-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal"></i>
+        <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
+      </div>
       <%= link_to calendars_path do %>
         <i class="fas fa-home"></i>
       <% end %>

@@ -11,7 +11,7 @@
     </li>
   </ul>
 </div>
-<div class="background-index" style="background-color rgb(240, 240, 240);">
+<div class="background-index">
   <h6><strong>Recent Games<span></span></strong></h6>
   <div class="container-index mt-1">
     <div class="col-md-3">
@@ -23,7 +23,7 @@
           <img src="<%= image_path 'Bilyur_token_2.png' %>" alt="profile-image" class="profile"/>
         </div>
         <div class="card-content">
-          <h2>Brandon<small>Wiley Wizard</small></h3>
+          <h2><%= @user.email %><small>Wiley Wizard</small></h3>
           <ul style="list-style: none;">
             <li><%= link_to 'Plus' %> | <%= link_to 'Manage Subscription' %></li>
             <li><%= link_to 'Help Center' %></li>
