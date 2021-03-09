@@ -17,12 +17,6 @@ class CalendarsController < ApplicationController
     @user_calendar = UserCalendar.new
   end
 
-  def update
-    @calendar.update(calendar_params)
-    respond_to do |format|
-      format.js
-    end
-  end
 
   def show_month
     @calendar = Calendar.includes(:events).find(params[:id])
@@ -60,11 +54,19 @@ class CalendarsController < ApplicationController
     authorize @calendar
   end
 
+  # def update
+  #   @calendar = Calendar.find(params[:id])
+  #   @calendar.update(calendar_params)
+  #   authorize @calendar
+  #   redirect_to calendars_path
+  # end
+
   def update
-    @calendar = Calendar.find(params[:id])
     @calendar.update(calendar_params)
-    authorize @calendar
-    redirect_to calendars_path
+    respond_to do |format|
+      format.js
+      format.html { redirect_to calendars_path }
+    end
   end
 
   def destroy
