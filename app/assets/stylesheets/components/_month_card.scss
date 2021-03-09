@@ -8,15 +8,15 @@
 }
 
 .month-card {
-  color: rgba(240, 240, 240, 1);
+  color: rgb(64,86,111);
   position: relative;
   height: 140px;
   margin: 0px;
-  border: solid 1px rgb(117,226,215);
-  // background-image: linear-gradient(to right, rgba(55,59,68, .5), rgba(66,134,244, .5));
-  background-color: #607184;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
-
+  border: solid 2px #75e2d7;
+  background-color: #f0f0f0;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 4px rgba(40, 40, 40, 0.3);
 }
 
 .month-title {
