@@ -11,7 +11,19 @@ class Calendar < ApplicationRecord
   validates :name, presence: true
   # validates :title, presence: true
   # validates :description, presence: true
+def get_day_style(day)
+  if day == self.current_day
+    #set yellow if current day
+    return "year-current-day"
+  elsif self.events.any? {|event| event.day_number == day}
+    #set blue if has events
+    return "year-current-day-has-event"
+  else
+    #set as normal
+    return "day"
+  end
 
+end
 def calculate_date(target_day) #TODO maybe I could refactor this.
     @calendar = self
     @sum_of_months = 0
