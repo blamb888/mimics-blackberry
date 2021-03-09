@@ -124,7 +124,13 @@
 
 .delete-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 90%;
   margin-top: 16px;
+}
+
+.fa-user-plus {
+  color: red;
+  font-size: 28px;
+  opacity: .4;
 }

@@ -1,11 +1,15 @@
 <div class="background-new">
   <div class="delete-button">
     <div>
+      <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#add_user_modal"> Add Player</button>
+      <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
+    </div>
+    <div>
       <%= render 'form_edit_modal' %>
     </div>
     <div>
-      <%= link_to calendar_path(@calendar), method: :delete, data: { confirm: "Are you sure you want to delete it?" }, style: "" do %>
-        <i class="fas fa-calendar-times"></i>
+      <%= link_to calendar_path(@calendar), method: :delete, data: { confirm: "Are you sure you want to delete it?" }, style: "margin-left: 8px;" do %>
+        <button type="button" class="btn btn-outline-success"> Delete Calendar </button>
       <% end %>
     </div>
   </div>
@@ -31,11 +35,6 @@
       <% end %>
     </div>
     <div>
-      <% #TEST ADD PLAYER BUTTON%>
-      <div class="d-flex">
-        <i class="far fa-calendar-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal"></i>
-        <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
-      </div>
       <%= link_to calendars_path do %>
         <i class="fas fa-home"></i>
       <% end %>
