@@ -23,7 +23,6 @@ class Event < ApplicationRecord
       Event.calendar = Calendar.last
       Event.user = current_user
       Event.save
-      raise
     end
   end
 end
