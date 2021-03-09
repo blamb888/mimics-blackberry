@@ -8,8 +8,8 @@
       <%= render 'form_edit_modal' %>
     </div>
     <div>
-      <%= link_to calendar_path(@calendar), method: :delete, data: { confirm: "Are you sure you want to delete it?" }, style: "margin-left: 8px;" do %>
-        <button type="button" class="btn btn-outline-success"> Delete Calendar </button>
+      <%= link_to calendar_path(@calendar), method: :delete, data: { confirm: "Are you sure you want to delete it?" }, style: "margin-left: 8px; opacity: 0.5;" do %>
+        <button type="button" class="btn btn-outline-danger"> Delete Calendar </button>
       <% end %>
     </div>
   </div>
