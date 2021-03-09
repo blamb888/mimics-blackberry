@@ -1,15 +1,21 @@
 
 .current-day{
-  background-color: #E1CE7A;
+  background: linear-gradient(to right bottom, rgb(108, 255, 178), rgb(126, 193, 255));
   color: rgb(47, 103, 167);
   position: relative;
+  border: none;
+
   &:after{
-    content: '\f6c9';
+    content: "\f38d-Today";
     font-family: "Font Awesome 5 Brands";
-    font-size: 25px;
+    font-size: 16px;
+    // font-weight: bolder;
     position: absolute;
-    bottom: 4px;
-    right: 4px;
+    bottom: 2px;
+    right: 8px;
+    color: #F1E1AE;
+    text-decoration: none;
+    text-shadow: none;
   }
 }
 
