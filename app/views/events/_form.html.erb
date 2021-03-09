@@ -1,11 +1,11 @@
 <% if policy(Event).create? %>
-  <%= simple_form_for [@calendar, @event], namespace: "day_#{ @day_of_year }" do |f| %>
-    <%= f.input :day_number, as: :hidden, input_html: { value: @day_of_year } %>
+  <%= simple_form_for [@calendar, @event], namespace: "day_#{ day_of_year }" do |f| %>
+    <%= f.input :day_number, as: :hidden, input_html: { value: day_of_year } %>
     <%= hidden_field_tag(:month_id, @month_index) %>
     <%= f.input :name, required: true %>
     <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
     <%= f.rich_text_area :rich_description %>
-    <%= f.input :category, required: true, collection: Event::CATEGORIES, include_blank: true, style: "m-1" %>
+    <%= f.input :category, required: true, collection: @calendar.user == current_user ? Event::CATEGORIES : ["Notes"], include_blank: true, style: "m-1" %>
     <%= f.submit "Add Event", class: "btn btn-primary mb-3"%>
   <% end %>
 <% end %>
