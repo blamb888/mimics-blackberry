@@ -58,7 +58,7 @@
   font-family: 'Akaya Telivigala', cursive;
     opacity: 0.7;
     font-size: 18px;
-    /* margin-bottom: 16px; */
+    width: 240px;
     margin-top: 16px;
     text-align: center;
     margin: 7px;
@@ -70,6 +70,7 @@
 }
 
 .card-game-info {
+    width: 260px;
 }
 
 .container-game-info {
@@ -109,25 +110,24 @@
 
 .fas.fa-calendar-times {
   color: red;
-    font-size: 28px;
-    opacity: .4;
+    font-size: 26px;
+    opacity: .5;
 }
 
-.fas.fa-hand-sparkles {
-  color: red;
-    font-size: 28px;
-    opacity: .4;
+.fas.fa-magic {
+  color: rgb(117,226,215);
+  font-size: 20px;
 }
 
-.fas.fa-hand-sparkles:hover {
-  color: red;
-  opacity: .5;
+.fas.fa-magic:hover {
+  color: rgb(117,226,215);
+  opacity: .7;
 }
 
 
 .fas.fa-calendar-times:hover {
   color: red;
-  opacity: .5;
+  opacity: .6;
 }
 
 
@@ -139,7 +139,12 @@
 }
 
 .fa-user-plus {
-  color: red;
-  font-size: 28px;
-  opacity: .4;
+  color: rgb(117,226,215);
+  font-size: 20px;
+}
+
+.fa-user-plus:hover {
+  color: rgb(117,226,215);
+  font-size: 20px;
+  opacity: .7;
 }
