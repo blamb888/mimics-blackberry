@@ -1,4 +1,4 @@
-class Event < ApplicationRecord
+  class Event < ApplicationRecord
   belongs_to :calendar
   belongs_to :user
   has_rich_text :rich_description
@@ -23,7 +23,15 @@ class Event < ApplicationRecord
       Event.calendar = Calendar.last
       Event.user = current_user
       Event.save
-      raise
     end
   end
+
+  def get_categories(calendar)
+    if calendar.user == current_user
+      return CATEGORIES
+    else
+      return ["Notes"]
+    end
+  end
+  
 end
