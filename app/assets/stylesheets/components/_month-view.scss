@@ -1,6 +1,6 @@
 
 .bottom-buttons {
-  margin: 40px;
+  margin-top: 16px;
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -13,9 +13,10 @@
 }
 
 .arrow-buttons {
-  margin: 32px 16px 0px 16px;
-  display: flex;
-  justify-content: space-between;
+  margin: 28px 16px 0px 16px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .fas.fa-caret-left {
@@ -69,7 +70,7 @@
 .bottom-buttons-year {
   display: flex;
   width: 90%;
-  margin: 16px;
+  // margin: 16px;
   justify-content: space-between;
 }
 

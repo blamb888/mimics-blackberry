@@ -1,9 +1,7 @@
-<div class="container-edit-form">
-  <div class="card-edit-form">
-    <%= simple_form_for [@calendar] do |f| %>
-      <%= f.input :title, required: false %>
-      <%= f.input :description, required: false %>
-      <%= f.submit "Add Game Description", class: "btn btn-success" %>
-    <% end %>
-  </div>
+<div class="card-edit-form">
+  <%= simple_form_for [@calendar] do |f| %>
+    <%= f.input :title, required: false %>
+    <%= f.input :description, required: false %>
+    <%= f.submit "Add Game Description", class: "btn btn-success" %>
+  <% end %>
 </div>
