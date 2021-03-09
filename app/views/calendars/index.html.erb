@@ -18,16 +18,16 @@
       <div class="card profile-card-3">
         <div class="background-block">
           <% if current_user.email == "dm@gmail.com" %>
-            <%= image_path "wizard.jpg", class: "background" %>
+            <%= image_tag "wizard.jpg", class: "background" %>
           <% else %>
-            <%= image_path "paladin_background.jpg", class: "background" %>
+            <%= image_tag "paladin_background.jpg", class: "background" %>
           <% end %>
         </div>
         <div class="profile-thumb-block">
           <% if current_user.email == "dm@gmail.com" %>
             <img src="<%= image_path 'Bilyur_token_2.png' %>" alt="profile-image" class="profile"/>
           <% else %>
-            <img src="<%= image_path 'Seldec Alpenflaw_token_2.png' %>" class="card-trip-user avatar-bordered dropdown-toggle", id= "navbarDropdown", data-toggle= "dropdown", aria-haspopup="true", aria-expanded="false" />
+            <img src="<%= image_path 'SeldecAlpenflaw_token_2.png' %>" alt="profile-image" class="profile"/>
           <% end %>
         </div>
         <div class="card-content">
