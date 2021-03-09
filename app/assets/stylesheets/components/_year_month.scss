@@ -1,8 +1,16 @@
 
 .current-day{
-  // background-color: #E1CE7A;
+  background-color: #E1CE7A;
   color: rgb(47, 103, 167);
-  content: "<i class="fas fa-dice-d20"></i>";
+  position: relative;
+  &:after{
+    content: '\f6c9';
+    font-family: "Font Awesome 5 Brands";
+    font-size: 25px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+  }
 }
 
 .year-current-day{
