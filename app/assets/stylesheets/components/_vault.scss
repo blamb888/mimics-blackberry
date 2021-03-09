@@ -58,6 +58,7 @@ grid-gap: 20px;
 justify-content:center;
 font-size: 25px;
 color: rgb(27,40,54);
+margin-top: 16px;
 }
 
 h6:after,h6:before {
@@ -68,6 +69,29 @@ border-bottom: 3px solid rgb(117,226,215);
 .arrow-buttons {
   width: 100%;
 }
+
+.month-card-container h4 {
+  text-align:center;
+  display: grid;
+  grid-template-columns: 200px max-content 200px;
+  grid-template-rows: 15px 0;
+  grid-gap: 20px;
+  justify-content:center;
+  font-size: 25px;
+  color: rgb(27,40,54);
+  font-family: 'Uncial Antiqua', cursive;
+    &:after,&:before {
+    content: " ";
+    display: block;
+    border-bottom: 3px solid rgb(117,226,215);
+    }
+    .arrow-buttons {
+    width: 100%;
+  }
+}
+
+
+
 
 .arrow-buttons h4 {
 text-align:center;

@@ -2,7 +2,14 @@
 .bottom-buttons {
   margin-top: 16px;
   display: flex;
+  width: 90%;
   justify-content: space-between;
+}
+
+.months-card-container {
+  padding: 16px;
+  width: 85%;
+  overflow: overlay;
 }
 
 .arrow-buttons {
