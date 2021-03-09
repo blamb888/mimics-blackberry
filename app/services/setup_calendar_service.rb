@@ -37,7 +37,8 @@ class SetupCalendarService
           name: event[:name],
           category: event[:category],
           day_number: event[:day_number],
-          rich_description: event[:rich_description]
+          rich_description: event[:rich_description],
+          private: false
         )
       end
   end
