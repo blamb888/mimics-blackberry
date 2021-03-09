@@ -6,7 +6,7 @@
     <% month[1].times do %>
       <% @day_counter += 1%>
       <% @year_day += 1%>
-      <div class="<%= @year_day == @calendar.current_day ? "year-current-day" : "day"%>"><%= @day_counter %></div>
+      <div class=<%= "#{@calendar.get_day_style(@year_day)}"%>><%= @day_counter %></div>
     <% end %>
   </div>
 </div>
