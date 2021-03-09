@@ -4,6 +4,12 @@
   grid-gap: 16px;
 }
 
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
 .card-category {
   background-size: cover;
   background-position: center;
