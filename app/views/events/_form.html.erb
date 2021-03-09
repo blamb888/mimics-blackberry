@@ -4,6 +4,7 @@
     <%= hidden_field_tag(:month_id, @month_index) %>
     <%= f.input :name, required: true %>
     <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
+    <%= f.input :private, inline_label: 'Private:' %>
     <%= f.rich_text_area :rich_description %>
     <%= f.input :category, required: true, collection: @calendar.user == current_user ? Event::CATEGORIES : ["Notes"], include_blank: true, style: "m-1" %>
     <%= f.submit "Add Event", class: "btn btn-primary mb-3"%>
