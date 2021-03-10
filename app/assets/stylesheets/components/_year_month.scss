@@ -2,7 +2,7 @@
 .current-day{
   //
   background-color: #40566f;;
-  color: wheat;
+  color: rgba(245,222,179, 1);
   position: relative;
   border: none;
 
@@ -71,4 +71,27 @@
   font-size: 26px;
 }
 
+.fas.fa-cloud-sun:hover {
+   color: rgb(247, 219, 168);
+}
+
+.fas.fa-scroll:hover {
+   color: rgb(247, 219, 168);
+}
+
+.far.fa-calendar-alt:hover {
+   color: rgb(247, 219, 168);
+}
+
+.fas.fa-briefcase:hover {
+   color: rgb(247, 219, 168);
+}
+
+.fas.fa-user-shield:hover {
+   color: rgb(247, 219, 168);
+}
+
+.fas.fa-dungeon:hover {
+   color: rgb(247, 219, 168);
+}
 

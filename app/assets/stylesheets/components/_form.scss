@@ -46,7 +46,7 @@ input[type=submit] {
   color: white;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
   // background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-  background-color: rgb(117,226,215);
+  background-color: rgb(64,86,111);
 }
 
 input[type=submit]:focus {
@@ -55,6 +55,7 @@ input[type=submit]:focus {
 
 input[type=submit]:hover {
   background-position: right center;
+  background-color: rgb(27,40,54);
 }
 
 hr {

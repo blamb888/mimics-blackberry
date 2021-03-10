@@ -2,11 +2,11 @@
   <%= simple_form_for [@calendar, @event], namespace: "day_#{ day_of_year }" do |f| %>
     <%= f.input :day_number, as: :hidden, input_html: { value: day_of_year } %>
     <%= hidden_field_tag(:month_id, @month_index) %>
-    <%= f.input :name, required: true %>
+    <%= f.input :name, required: false %>
     <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
     <%= f.input :private, inline_label: 'Private:' %>
     <%= f.rich_text_area :rich_description %>
-    <%= f.input :category, required: true, collection: @calendar.user == current_user ? Event::CATEGORIES : ["Notes"], include_blank: true, style: "m-1" %>
+    <%= f.input :category, as: :radio_buttons, label: false, required: false, collection: @calendar.user == current_user ? Event::CATEGORIES : ["Notes"], include_blank: true, style: "m-1", input_html: { class: "event-box" } %>
     <%= f.input :private, :as => :boolean, :label => false, :input_html => { :'data-label' => 'Do you want experiment logs or methods?' }   %>
     <%= f.submit "Add Event", class: "btn btn-primary mb-3"%>
   <% end %>
