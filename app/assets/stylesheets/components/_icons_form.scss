@@ -1,0 +1,66 @@
+.simple_form.new_event {
+  input[type="radio"]:before {
+    font-weight: 900;
+    display: block;
+    visibility: visible;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    margin-left: 135px;
+    color: rgba(64,86,111, .5);
+    text-shadow: 0px 0px 1px rgba(40, 40, 40, .1);
+    cursor: pointer;
+  }
+  input[value="Weather"]:before {
+    content: "\f6c4";
+    font-family: "Font Awesome 5 free";
+  }
+  input[value="Notes"]:before {
+    content: "\f70e";
+    font-family: "Font Awesome 5 free";
+  }
+   input[value="Holiday"]:before {
+    content: "\f073";
+    font-family: "Font Awesome 5 free";
+  }
+   input[value="Item"]:before {
+    content: "\f0b1";
+    font-family: "Font Awesome 5 free";
+  }
+   input[value="Character"]:before {
+    content: "\f505";
+    font-family: "Font Awesome 5 free";
+  }
+   input[value="Historical Event"]:before {
+    content: "\f6d9";
+    font-family: "Font Awesome 5 free";
+  }
+  input.radio_buttons {
+    // visibility: hidden;
+  }
+}
+
+
+.active-box:before {
+  color: rgb(248, 219, 166) !important;
+}
+
+.simple_form.new_event input.radio_buttons {
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset.form-group.radio_buttons.optional.event_category {
+  display: flex;
+  justify-content: space-evenly;
+  visibility: hidden;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 35%;
+}
