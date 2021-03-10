@@ -15,6 +15,13 @@
     ],
     "browser_action": {
       "default_title": "Mimics Blackberry",
-      "default_popup": "popup.html"
-    }
+      "default_popup": "popup.html",
+      "default_icon": "images/mimic_book.png"
+    },
+      "icons": {
+        "16": "images/mimic_book.png",
+        "32": "images/mimic_book.png",
+        "48": "images/mimic_book.png",
+        "128": "images/mimic_book.png"
+      }
 }

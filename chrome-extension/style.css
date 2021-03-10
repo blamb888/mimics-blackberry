@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 body {
  font-family: 'Roboto', sans-serif;
+ padding: 8px;
 }
 
 input {
@@ -18,6 +19,7 @@ input {
   text-decoration: none;
   text-align: left;
 }
+
 #send-data {
     width: 100%;
     padding: 12px;
@@ -62,4 +64,21 @@ h4 {
 h4:last-child {
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 8px;
+  margin-bottom: -16px;
+}
+
+#mimic-book {
+  width: 32px;
+  height: 32px;
+}
+
+#current-date {
+  margin: 0px;
 }
