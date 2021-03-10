@@ -3,7 +3,7 @@ function listenClick() {
     console.log(tabs)
     chrome.tabs.sendMessage(tabs[0].id, 'getWhatever', (result) => {
       //popupDisplay
-      console.log(result.currentDay);
+      // console.log(result.currentDay);
       document.getElementById("calendar-name").innerText = result.calendarName
       document.getElementById("current-date").innerText =`${result.monthName}-${result.currentDay}`
       //preparing form data
