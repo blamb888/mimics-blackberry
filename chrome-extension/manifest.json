@@ -2,29 +2,15 @@
   "name": "Mimic's Blackberry chrome extension",
   "version": "1.0",
   "description": "For seemless integration with Roll20 & other virtual tabletops",
-  "manifest_version": 1,
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
     "permissions": [
       "activeTab"
     ],
     "browser_action": {
+      "default_title": "Mimics Blackberry",
       "default_popup": "popup.html"
     }
 }
-
-
-
-// {
-//   "browser_action": {
-//     "default_popup": "popup.html",
-//     "default_icon": "images/mimic.png"
-//   }
-// }
-// {
-//   // [...]
-//   "icons": {
-//     "16": "images/mimic.png",
-//     "32": "images/mimic.png",
-//     "48": "images/mimic.png",
-//     "128": "images/mimic.png"
-//   }
-// }
