@@ -23,12 +23,12 @@
               <div class="fas fa-user-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal"></div>
               <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
             </h4>
-            <h4 style="font-size: 19px;"><small><em><%= @calendar.user.email %></em></small></h4>
+            <h4 style="font-size: 19px;"><small><em><%= @calendar.user.username %></em></small></h4>
             <hr>
             <h4 style="margin-top: 16px; font-size: 19px;"><strong>Players</strong></h4>
             <% if @calendar.users.any? %>
               <% @calendar.users.each do |user| %>
-                <h4 style="font-size: 19px;"><small><em><%= user.email %></em></small></h4>
+                <h4 style="font-size: 19px;"><small><em><%= user.username %></em></small></h4>
               <% end %>
             <% else %>
               <h4 style="font-size: 19px;"><small><em>No players yet...</em></small></h4>
