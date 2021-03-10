@@ -11,15 +11,15 @@ Calendar.destroy_all
 User.destroy_all
 
 puts("SEED INITIATING")
-dm = User.new({email: "dm@gmail.com", password: "secret"})
+dm = User.new({email: "dm@gmail.com", password: "secret", username: "Blamb888", subtitle: "dashing dungeon master"})
 dm.save
-player1 = User.new({email: "player1@gmail.com", password: "secret"})
+player1 = User.new({email: "player1@gmail.com", password: "secret", username: "Wallace-A", subtitle: "mighty paladin"})
 player1.save
-player2 = User.new({email: "player2@gmail.com", password: "secret"})
+player2 = User.new({email: "player2@gmail.com", password: "secret",  username: "Alberto", subtitle: "brave cleric"})
 player2.save
-player3 = User.new({email: "player3@gmail.com", password: "secret"})
+player3 = User.new({email: "player3@gmail.com", password: "secret", username: "Ruben", subtitle: "reckless warrior"})
 player3.save
-player4 = User.new({email: "player4@gmail.com", password: "secret"})
+player4 = User.new({email: "player4@gmail.com", password: "secret", username: "someguy84", subtitle: "hero"})
 player4.save
 puts("USER CREATED")
 
