@@ -65,7 +65,7 @@ class CalendarsController < ApplicationController
     @calendar.update(calendar_params)
     respond_to do |format|
       format.js
-      format.html { redirect_to calendars_path }
+      format.html { redirect_to calendar_path(@calendar) }
     end
   end
 

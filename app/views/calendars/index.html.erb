@@ -33,13 +33,13 @@
         <div class="card-content">
           <h2><%= @user.email %><small>Wiley Wizard</small></h3>
           <ul style="list-style: none;">
-            <li><%= link_to 'Plus' %> | <%= link_to 'Manage Subscription' %></li>
-            <li><%= link_to 'Help Center' %></li>
-            <li>Member since: 09/21/18</li>
-            <li>Hours Played: 951</li>
+            <li><i class="fas fa-user-cog"></i><%= link_to 'Manage Subscription' %></li>
+            <li><i class="far fa-question-circle"></i><%= link_to 'Help Center' %></li>
+            <li><i class="fas fa-cubes"></i>Member since: 09/21/18</li>
+            <li><i class="fas fa-hourglass-half"></i> 951 hours</li>
           </ul>
           <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
-          <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none", style: "width: 80%;" %>
+          <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-success m-3 text-center text-decoration-none", style: "width: 80%; opacity: 1;" %>
         </div>
       </div>
     </div>

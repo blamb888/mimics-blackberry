@@ -13,21 +13,23 @@
 }
 
 .arrow-buttons {
-  margin: 28px 16px 0px 16px;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
+  margin: 30px 16px 16px 16px;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .fas.fa-caret-left {
  color: rgba(27,40,54, 0.3);
  font-size: 38px;
+ padding-top: 12px;
 
 }
 
 .fas.fa-caret-right {
   color: rgba(27,40,54, 0.3);
   font-size: 38px;
+  padding-top: 12px;
 
 }
 
@@ -58,7 +60,7 @@
   font-family: 'Akaya Telivigala', cursive;
     opacity: 0.7;
     font-size: 18px;
-    /* margin-bottom: 16px; */
+    width: 230px;
     margin-top: 16px;
     text-align: center;
     margin: 7px;
@@ -67,6 +69,14 @@
       font-size: 24px;
       margin-bottom: 6px;
     }
+}
+
+.card-game-info {
+    width: 260px;
+}
+
+.container-game-info {
+  display: flex;
 }
 
 .bottom-buttons-year {
@@ -102,25 +112,24 @@
 
 .fas.fa-calendar-times {
   color: red;
-    font-size: 28px;
-    opacity: .4;
+    font-size: 26px;
+    opacity: .5;
 }
 
-.fas.fa-hand-sparkles {
-  color: red;
-    font-size: 28px;
-    opacity: .4;
+.fas.fa-magic {
+  color: rgb(117,226,215);
+  font-size: 20px;
 }
 
-.fas.fa-hand-sparkles:hover {
-  color: red;
-  opacity: .5;
+.fas.fa-magic:hover {
+  color: rgb(117,226,215);
+  opacity: .7;
 }
 
 
 .fas.fa-calendar-times:hover {
   color: red;
-  opacity: .5;
+  opacity: .6;
 }
 
 
@@ -132,7 +141,12 @@
 }
 
 .fa-user-plus {
-  color: red;
-  font-size: 28px;
-  opacity: .4;
+  color: rgb(117,226,215);
+  font-size: 20px;
+}
+
+.fa-user-plus:hover {
+  color: rgb(117,226,215);
+  font-size: 20px;
+  opacity: .7;
 }
