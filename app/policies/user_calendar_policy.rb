@@ -9,4 +9,8 @@ class UserCalendarPolicy < ApplicationPolicy
     return true
   end
 
+  def join?
+    record.calendar.user != user
+  end
+
 end
