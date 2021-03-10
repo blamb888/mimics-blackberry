@@ -1,5 +1,6 @@
 <div class="background-new" style="background-color rgb(240, 240, 240);">
-   <h6 style="margin-top: 16px"><strong>Templates<span></span></strong></h6>
+
+   <h6 style=""><strong>Templates<span></span></strong></h6>
   <div class="cards-show">
     <%= simple_form_for [@calendar] do |f| %>
       <%= hidden_field_tag :template, "custom calendar" %>
@@ -70,15 +71,8 @@
     <% end %>
   </div>
   <div class="bottom-buttons">
-    <div>
       <%= link_to calendars_path do %>
         <i class="fas fa-chevron-circle-left"></i>
       <% end %>
-    </div>
-    <div>
-      <%= link_to calendars_path do %>
-        <i class="fas fa-home"></i>
-      <% end %>
-    </div>
   </div>
 </div>

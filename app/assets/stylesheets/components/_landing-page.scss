@@ -14,8 +14,8 @@
     justify-content: center;
     margin: 30px 0px;
     padding: 14px 32px;
-    background-color: rgb(27,40,54);
     border-radius: 16px;
+    text-shadow: 10px 10px 20px rgba(40, 40, 40, 0.7);
     color: white;
          h1 {
            font-weight: bolder;
@@ -71,9 +71,8 @@
 .container-bottom {
   background-color: #1B2836;
   color: white;
+  padding: 16px;
   // height: 31vh;
-  padding: 12px;
-
 }
 
 .cards-bottom {
@@ -99,4 +98,10 @@
 
 .cards-bottom p {
     color: white;
+}
+
+.landing-background {
+  background-position: bottom;
+  background-size: cover;
+  height: 90%;
 }

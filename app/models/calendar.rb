@@ -13,11 +13,11 @@ class Calendar < ApplicationRecord
   validates :name, presence: true
   # validates :title, presence: true
   # validates :description, presence: true
-def get_day_style(day)
+def get_day_style(day, current_user)
   if day == self.current_day
     #set yellow if current day
     return "year-current-day"
-  elsif self.events.any? {|event| event.day_number == day}
+  elsif self.events.any? {|event| event.day_number == day && (event.private == false || (event.private == true && event.user == current_user))}
     #set blue if has events
     return "year-current-day-has-event"
   else
