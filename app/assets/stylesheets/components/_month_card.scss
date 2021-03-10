@@ -44,9 +44,18 @@
   grid-auto-flow: dense;
 }
 
-.fa-calendar-plus {
+.fas.fa-plus {
   position: absolute;
     right: 4px;
     top: 4px;
-    font-size: 18px;
+    font-size: 16px;
+    opacity: .9;
+}
+
+.fas.fa-plus:hover {
+  position: absolute;
+    right: 4px;
+    top: 4px;
+    font-size: 16px;
+    opacity: 1;
 }

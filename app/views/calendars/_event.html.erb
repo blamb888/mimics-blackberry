@@ -1,1 +1,14 @@
-<div><i class="fas fa-caret-down cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i> <%= event.name%></div>
+<% case event.category %>
+<% when "Weather" %>
+<div><i class="fas fa-cloud-sun cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% when "Notes" %>
+<div><i class="fas fa-scroll cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% when "Holiday" %>
+<div><i class="far fa-calendar-alt cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% when "Item" %>
+<div><i class="fas fa-briefcase cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% when "Character" %>
+<div><i class="fas fa-user-shield cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% when "Historical Event" %>
+<div><i class="fas fa-dungeon cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<% end %>
