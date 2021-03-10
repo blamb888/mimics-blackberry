@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Modal -->
@@ -25,16 +26,16 @@
                 </div>
               </div>-->
               <div class="form-group row">
-                <label for="name" class="col-sm-2 col-form-label">Notes</label>
+                <label for="name" class="col-sm-2 col-form-label"><h4>Notes</h4></label>
                 <div class="col-sm-10">
                   <input type="name" class="form-control" id="name" placeholder="Title">
                   <input type="hidden" id="category" name="custId" value="Notes">
                 </div>
               </div>
               <div class="form-group row">
-                <div class="col-sm-2">Private</div>
+                <div class="col-sm-2"><h4>Private</h4></div>
                 <div class="col-sm-10">
-                  <div class="form-check">
+                  <div id="private-check" class="form-check">
                     <input class="form-check-input" type="checkbox" id="private">
                     <label class="form-check-label" for="gridCheck1">
                     </label>
@@ -42,20 +43,18 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="text" class="col-sm-2 col-form-label">Content</label>
+                <label for="text" class="col-sm-2 col-form-label"><h4>Content</h4></label>
                 <div class="col-sm-10">
-                  <textarea rows="25" cols="50" type="text" class="form-control" id="rich_description" placeholder="Content">
+                  <textarea rows="20" cols="40" type="text" class="form-control" id="rich_description" placeholder="Content">
                   </textarea>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-sm-10">
-                  <button type="submit" id="send-data" class="btn btn-primary">Submit</button>
+                  <button type="submit" id="send-data" class="btn btn-primary"><h4>Submit</h4></button>
                 </div>
               </div>
             </form>
-
-
           </div>
         </div>
       </div>
