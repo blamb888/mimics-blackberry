@@ -17,21 +17,21 @@
     <div class="col-12 col-md-3" >
       <div class="card profile-card-3">
         <div class="background-block">
-          <% if current_user.email == "dm@gmail.com" %>
+          <% if current_user.email == "blamb888@gmail.com" %>
             <%= image_tag "wizard.jpg", class: "background" %>
           <% else %>
             <%= image_tag "paladin_background.jpg", class: "background" %>
           <% end %>
         </div>
         <div class="profile-thumb-block">
-          <% if current_user.email == "dm@gmail.com" %>
+          <% if current_user.email == "blamb888@gmail.com" %>
             <img src="<%= image_path 'Bilyur_token_2.png' %>" alt="profile-image" class="profile"/>
           <% else %>
             <img src="<%= image_path 'SeldecAlpenflaw_token_2.png' %>" alt="profile-image" class="profile"/>
           <% end %>
         </div>
         <div class="card-content">
-          <h2><%= @user.email %><small>Wiley Wizard</small></h3>
+          <h2><%= @user.username %><small><%= @user.subtitle %></small></h3>
           <ul style="list-style: none;">
             <li><i class="fas fa-user-cog"></i><%= link_to 'Manage Subscription' %></li>
             <li><i class="far fa-question-circle"></i><%= link_to 'Help Center' %></li>
@@ -41,7 +41,6 @@
           <!-- <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div> -->
 
           <%= link_to 'New Calendar', new_calendar_path, class: "btn btn-primary m-3 text-center text-decoration-none", style: "width: 80%;" %>
-
         </div>
       </div>
     </div>
@@ -59,7 +58,14 @@
                   </div>
                   <div class="card-trip-infos">
                     <div>
-                      <% if calendar.title != nil && calendar.description != nil %>
+                      <div class="card-user-icon">
+                        <% if calendar.user != current_user  %>
+                          <i class="fas fa-user"></i>
+                        <% else %>
+                          <i class="fas fa-hat-wizard"></i>
+                        <% end %>
+                      </div>
+                      <% if calendar.title != nil && calendar.description != nil && %>
                         <h3><%= calendar.title %></h3>
                         <p><em><%= calendar.description %></em></p>
                       <% else %>
@@ -82,6 +88,7 @@
                 <div>
                   <h3>The two towers</h3>
                   <p><em>Journey to Sauron's stronghold in Mordor and Saruman's citadel in Isengard</em></p>
+                  <i class="hard fas fa-hat-wizard"></i>
                 </div>
               </div>
             </div>
