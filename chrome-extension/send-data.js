@@ -14,7 +14,8 @@ function fetchData() {
     // title: title,
     content: content,
     calendar_id: calendar_id,
-    calendar_day: calendar_day
+    calendar_day: calendar_day,
+
   }
 }
 
