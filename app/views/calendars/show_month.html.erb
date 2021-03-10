@@ -31,6 +31,11 @@
       <% end %>
     </div>
   </div>
+  <div class="info-current-day">
+    <% if @calendar.user == current_user %>
+      <p style="font-size: 15px;"><em><small></small>*Double click to set current day!</em></p>
+    <% end %>
+  </div>
   <div class="bottom-buttons">
     <div>
       <%= link_to calendar_path(@calendar) do %>
