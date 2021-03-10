@@ -30,6 +30,11 @@
   </div>
   <div class="bottom-buttons-year">
     <div>
+      <div data-controller="share" data-styling-primary-class="btn-primary">
+        <button class='btn' data-styling-target='button' data-action='share#clicked'>
+          Copy Link
+        </button>
+      </div>
       <%= link_to calendars_path do %>
         <i class="fas fa-chevron-circle-left"></i>
       <% end %>
