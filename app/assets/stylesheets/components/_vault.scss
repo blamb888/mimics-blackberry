@@ -318,6 +318,14 @@ align-items: center;
   position: relative;
 }
 
+.card-trip .card-trip-infos i {
+    bottom: 10px;
+    position: absolute;
+    right: 25px;
+    font-size: 25px;
+    color: darkgoldenrod;
+}
+
 .card-trip-infos .card-trip-user {
   position: absolute;
   right: 16px;

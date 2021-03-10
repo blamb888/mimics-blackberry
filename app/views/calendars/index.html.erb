@@ -57,12 +57,19 @@
                   </div>
                   <div class="card-trip-infos">
                     <div>
-                      <% if calendar.title != nil && calendar.description != nil %>
+                      <% if calendar.title != nil && calendar.description != nil && %>
                         <h3><%= calendar.title %></h3>
                         <p><em><%= calendar.description %></em></p>
+                        <!-- <i class="fas fa-hat-wizard"></i> -->
                       <% else %>
                         <h3>Add Game Title</h3>
                         <p><em>Add Game Description</em></p>
+                        <!-- <i class="fas fa-user"></i> -->
+                      <% end %>
+                      <% if current_user.email != "dm@gmail.com" %>
+                        <i class="fas fa-user"></i>
+                      <% else %>
+                        <i class="fas fa-hat-wizard"></i>
                       <% end %>
                     </div>
                   </div>
