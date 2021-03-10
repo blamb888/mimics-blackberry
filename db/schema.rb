@@ -65,6 +65,8 @@ ActiveRecord::Schema.define(version: 2021_03_10_033900) do
     t.string "name"
     t.string "title"
     t.text "description"
+    t.string "token", limit: 5
+    t.index ["token"], name: "index_calendars_on_token", unique: true
     t.index ["user_id"], name: "index_calendars_on_user_id"
   end
 

@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     end
   end
   resources :events, only: [:edit, :update, :destroy]
+
+  get ":token/join", to: 'user_calendars#join'
 end
