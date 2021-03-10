@@ -198,6 +198,12 @@ align-items: center;
   position: relative;
   z-index: 9999;
 }
+
+.profile-card-3 .card-content ul {
+  text-align: left;
+}
+
+
 .profile-card-3 .card-content::before {
     content: '';
     background: #efefef;
@@ -238,7 +244,7 @@ align-items: center;
     font-size: 16px;
     color: #232323;
     text-align: center;
-    border: 1px solid #232323;
+    // border: 1px solid #232323;
     width: 30px;
     height: 30px;
     line-height: 30px;
