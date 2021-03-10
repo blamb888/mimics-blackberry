@@ -6,7 +6,7 @@ export default class extends Controller {
 
   clicked() {
     console.log('copy');
-    const text = window.location.href;
+    const text = window.location.origin + "/" + this.buttonTarget.dataset.token + "/join";
     console.log(text);
     const elem = document.createElement('textarea');
     elem.value = text;
