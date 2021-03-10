@@ -57,7 +57,14 @@
                   </div>
                   <div class="card-trip-infos">
                     <div>
-                      <% if calendar.title != nil && calendar.description != nil %>
+                      <div class="card-user-icon">
+                        <% if calendar.user != current_user  %>
+                          <i class="fas fa-user"></i>
+                        <% else %>
+                          <i class="fas fa-hat-wizard"></i>
+                        <% end %>
+                      </div>
+                      <% if calendar.title != nil && calendar.description != nil && %>
                         <h3><%= calendar.title %></h3>
                         <p><em><%= calendar.description %></em></p>
                       <% else %>
@@ -80,6 +87,7 @@
                 <div>
                   <h3>The two towers</h3>
                   <p><em>Journey to Sauron's stronghold in Mordor and Saruman's citadel in Isengard</em></p>
+                  <i class="hard fas fa-hat-wizard"></i>
                 </div>
               </div>
             </div>
