@@ -6,6 +6,7 @@
     <!--<%= f.input :photos, as: :file, input_html: { multiple: true } %>-->
     <%= f.rich_text_area :rich_description %>
     <%= f.input :category, required: true, collection: @calendar.user == current_user ? Event::CATEGORIES : ["Notes"], include_blank: true, style: "m-1" %>
+    <%= f.input :private, :as => :boolean, :label => false, :input_html => { :'data-label' => 'Do you want experiment logs or methods?' }   %>
     <%= f.submit "Add Event", class: "btn btn-primary mb-3"%>
   <% end %>
 <% end %>
