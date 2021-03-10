@@ -3,8 +3,9 @@ function listenClick() {
     console.log(tabs)
     chrome.tabs.sendMessage(tabs[0].id, 'getWhatever', (result) => {
       //popupDisplay
+      console.log(result)
       document.getElementById("calendar-name").innerText = result.calendarName
-      document.getElementById("current-date").innerText = `${result.monthName}-${result.currentDay}`
+      document.getElementById("current-date").innerText =`${result.monthName}-${result.currentDay}`
       //preparing form data
       const calendar_id = result.calendarId
       const user_id = result.userId
