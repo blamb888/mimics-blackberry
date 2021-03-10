@@ -1,14 +1,17 @@
 
 .current-day{
-  background: linear-gradient(to right bottom, rgb(108, 255, 178), rgb(126, 193, 255));
-  color: rgb(47, 103, 167);
+  //
+  background-color: #40566f;;
+  color: wheat;
   position: relative;
   border: none;
 
+
   &:after{
-    content: "\f38d-Today";
-    font-family: "Font Awesome 5 Brands";
-    font-size: 16px;
+    content: "\f6d5-Today";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 15px;
     // font-weight: bolder;
     position: absolute;
     bottom: 2px;
@@ -31,5 +34,39 @@
   border-radius: 50%;
   height: 25px;
   width: 25px;
+}
+
+.container-icons-card {
+  display: grid;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 12px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0px 10px;
+  grid-row-gap: 8px;
+}
+
+.fas.fa-cloud-sun {
+  font-size: 26px;
+}
+
+.fas.fa-scroll {
+  font-size: 26px;
+}
+
+.far.fa-calendar-alt {
+  font-size: 26px;
+}
+
+.fas.fa-briefcase {
+  font-size: 26px;
+}
+
+.fas.fa-user-shield {
+  font-size: 26px;
+}
+
+.fas.fa-dungeon {
+  font-size: 26px;
 }
 
