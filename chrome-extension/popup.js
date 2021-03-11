@@ -22,7 +22,8 @@ function listenClick() {
         const rich_description = document.querySelector('#rich_description').value;
         // const calendar_id = document.querySelector('#calendar_id').value;
 
-        const url = `http://localhost:3000/calendars/${calendar_id}/events`;
+        // const url = `http://localhost:3000/calendars/${calendar_id}/events`;
+        const url = `https://www.mimics-blackberry.com/calendars/${calendar_id}/events`;
         fetch(url, {
           method: 'POST',
           headers: { "Content-Type": "application/json" },
