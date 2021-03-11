@@ -30,7 +30,7 @@
 
 
 .button-landing {
-    background-color: #247FD3;
+    background-color: #64C9D9;
     opacity: .9;
     padding: 20px 10px;
     margin: 15px 0px;
@@ -54,8 +54,8 @@
 
 .button-landing:hover {
     opacity: 1;
-    background-color: #398cda;
-  color: white;
+    background-color: #76d2e0;
+    color: white;
 }
 
 
@@ -75,7 +75,7 @@
 
 
 .container-bottom {
-  background-color: #1B2836;
+  // background-color: #1B2836;
   color: white;
   padding: 16px;
   // height: 31vh;
@@ -86,6 +86,8 @@
     justify-content: space-around;
     margin-bottom: 12px;
     margin-top: 12px;
+    background-color: rgba(25, 25, 25, 0.03);
+    border-radius: 25px;
 
   }
 
