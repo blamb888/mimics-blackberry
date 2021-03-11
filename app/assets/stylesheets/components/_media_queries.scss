@@ -74,13 +74,38 @@
 @media (min-width: 768px) {
   .content-container {
       grid-template-columns: 1fr 1fr;
+      .months-card-container {
+        display: block !important;
+      }
+  }
+  #months-container {
+      grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .background-new {
+    margin-bottom: 16px;
   }
 }
 
   // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .content-container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  #container-game-info-row {
+      justify-content: none !important;
+      align-items: none !important;
+      margin-top: 48px !important;
+      display: inline !important;
+  }
+  #months-container {
+    display: contents !important;
+    grid-auto-flow: dense !important;
+  }
+  .card-game-info {
+    margin-left: 16px !important;
+  }
+  #ipad-media-calendar-view {
+    margin: 0px 24px !important;
   }
 }
 

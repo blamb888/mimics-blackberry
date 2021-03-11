@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="container-game-info">
-    <div class="row" style="align-items: center;">
+    <div id="container-game-info-row" class="row" style="align-items: center;">
       <div class="col-2">
         <div class="container">
           <div class="card-game-info">
@@ -31,66 +31,63 @@
                 </div>
                 <div data-controller="share" data-button-primary-class="btn-primary" style="margin-left: 8px;">
                   <div class="tooltip1">
-                   <div onclick="myFunction()" onmouseout="outFunc()" class='fas fa-link cursor-pointer link-icon' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
-                    <span class="tooltiptext1" id="myTooltip">Copy link to clipboard</span>
+                    <div onclick="myFunction()" onmouseout="outFunc()" class='fas fa-link cursor-pointer link-icon' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
+                      <span class="tooltiptext1" id="myTooltip">Copy link to clipboard</span>
                     </div>
                   </div>
                 </div>
-            </h4>
-            <% if @calendar.users.any? %>
-              <% @calendar.users.each do |user| %>
-                <h4 style="font-size: 19px;"><small><em><%= user.username %></em></small></h4>
+              </h4>
+              <% if @calendar.users.any? %>
+                <% @calendar.users.each do |user| %>
+                  <h4 style="font-size: 19px;"><small><em><%= user.username %></em></small></h4>
+                <% end %>
+              <% else %>
+                <h4 style="font-size: 19px;"><small><em>No players yet...</em></small></h4>
               <% end %>
-            <% else %>
-              <h4 style="font-size: 19px;"><small><em>No players yet...</em></small></h4>
-            <% end %>
-            <hr>
-            <h4 style="margin-top: 16px; font-size: 19px;"><strong>Current Day</strong></h4>
-            <h4 style="font-size: 19px;"><small><em><%= @calendar.event_day_calculation(@calendar.current_day) %></em></small></h4>
-            <hr>
+              <hr>
+              <h4 style="margin-top: 16px; font-size: 19px;"><strong>Current Day</strong></h4>
+              <h4 style="font-size: 19px;"><small><em><%= @calendar.event_day_calculation(@calendar.current_day) %></em></small></h4>
+              <hr>
               <a  href="https://app.roll20.net/editor/" add target="_blank" type="button" class="btn btn-primary text-center">Meet in Roll20</a>
-              
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-10">
-        <div class="month-card-container">
-          <h6 style="margin-bottom: 16px;"><strong>Eberron<span></span></strong></h6>
-          <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
+      <div id="ipad-media-calendar-view" class="row">
+        <div class="col-10">
+          <div class="month-card-container">
+            <h6 style="margin-bottom: 16px;"><strong>Eberron<span></span></strong></h6>
+            <div id="months-container" class="" style="display:grid; grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: dense;  grid-gap: 2px 25px;">
-            <% @year_day = 0 %>
-            <% @today = @calendar.current_day %>
-            <% @calendar.months.each.with_index do |month, index|%>
-              <%= link_to month_view_calendar_path(@calendar, :month_id => index, :today => @today) do %>
-                <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
+              <% @year_day = 0 %>
+              <% @today = @calendar.current_day %>
+              <% @calendar.months.each.with_index do |month, index|%>
+                <%= link_to month_view_calendar_path(@calendar, :month_id => index, :today => @today) do %>
+                  <%= render "calendars/year_month", :month => month, :year_day => @year_day, :today => @today %>
+                <% end %>
               <% end %>
-            <% end %>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="bottom-buttons-year">
-    <div>
-      <%= link_to calendars_path do %>
-        <i class="fas fa-chevron-circle-left"></i>
-      <% end %>
+    <div class="bottom-buttons-year">
+      <div>
+        <%= link_to calendars_path do %>
+          <i class="fas fa-chevron-circle-left"></i>
+        <% end %>
+      </div>
     </div>
   </div>
-  <br>
-  <br>
-</div>
-<script>
-function myFunction() {
-  
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied";
-}
-
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy link to clipboard";
-}
-</script>
+  <script>
+    function myFunction() {
+    
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied";
+    }
+    
+    function outFunc() {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copy link to clipboard";
+    }
+  </script>
