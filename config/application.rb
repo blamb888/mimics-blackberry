@@ -17,6 +17,7 @@ module MimicsBlackberry
     config.load_defaults 6.1
     config.action_view.embed_authenticity_token_in_remote_forms = true
     config.hosts << "eb16855e218a.ngrok.io"
+    config.hosts << "www.mimics-blackberry.com"
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
