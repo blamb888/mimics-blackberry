@@ -25,9 +25,11 @@ require("@rails/actiontext")
 import "controllers"
 // Internal imports, e.g:
 import { toggleEvent } from '../components/event_tag';
+import { toggleCopied } from '../components/copied';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   toggleEvent()
+  toggleCopied()
 });
 
