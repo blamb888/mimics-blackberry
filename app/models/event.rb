@@ -11,6 +11,14 @@
   validates :day_number, presence: true
   # validates :rich_description, presence: true
 
+  def convert_name(event_name)
+    max_size = 15
+    final_string = event_name[0...max_size]
+    if(event_name.length > max_size)
+      final_string += "..."
+    end
+    return final_string
+  end
     def self.new_template(template)
     case template
     when "eberron"

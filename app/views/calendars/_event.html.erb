@@ -1,14 +1,44 @@
-<% case event.category %>
-<% when "Weather" %>
-<div><i class="fas fa-cloud-sun cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<%  case event.category %>
+<%  when "Weather" %>
+<button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+  <div style="display: flex">
+    <i class="fas fa-cloud-sun cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+      <p><%=event.convert_name(event.name)%></p>
+  </div>
+</button>
 <% when "Notes" %>
-<div><i class="fas fa-scroll cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+  <div style="display: flex">
+    <i class="fas fa-scroll cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+        <p style=""><%=event.convert_name(event.name)%></p>
+  </div>
+</button>
 <% when "Holiday" %>
-<div><i class="far fa-calendar-alt cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+  <div style="display: flex">
+    <i class="fas fa-calendar-alt cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+      <p><%=event.convert_name(event.name)%></p>
+  </div>
+</button>
 <% when "Item" %>
-<div><i class="fas fa-briefcase cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+  <div style="display: flex">
+    <i class="fas fa-briefcase cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+      <p><%=event.convert_name(event.name)%></p>
+  </div>
+</button>
 <% when "Character" %>
-<div><i class="fas fa-user-shield cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+<button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+  <div style="display: flex">
+    <i class="fas fa-user-shield cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+      <p><%=event.convert_name(event.name)%></p>
+  </div>
+</button>
 <% when "Historical Event" %>
-<div><i class="fas fa-dungeon cursor-pointer" data-toggle="modal" data-target="#event-info-modal<%= event.id %>"></i></div>
+  <button class='btn <%= event.user == @calendar.user ? "btn-warning " : "btn-primary" %> ' style="margin:1px; padding: 4px; width: 100%" data-toggle="modal" data-target="#event-info-modal<%= event.id %>" style="width: 100%"%>
+    <div style="display: flex">
+      <i class="fas fa-dungeon cursor-pointer" style="font-size: 16px; margin-right: 8px"></i>
+        <p><%= event.convert_name(event.name)%></p>
+    </div>
+  </button>
 <% end %>
