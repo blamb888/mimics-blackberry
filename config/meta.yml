@@ -1,0 +1,5 @@
+meta_product_name: "Mimic's Blackbery"
+meta_title: "Mimic's Blackbery - Save some trees, keep your calendars in our vaults"
+meta_description: "Fantasy calendars hosted online for tabletop RPG players to connect over."
+meta_image: "mimiclogo.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
