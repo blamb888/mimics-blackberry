@@ -13,7 +13,13 @@
   <div id="month-view" class="months-card-container">
     <% #display name of month %>
     <% #container for month partials%>
-    <div id="calendar-container" data-controller="calendar" class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
+    <div id="calendar-container"
+      data-calendar-name= "<%=@calendar.name%>"
+      data-calendar-id="<%= @calendar.id %>"
+      data-user-id="<%= current_user.id %>"
+      data-month-name ="<%= @month_name %>"
+      data-controller="calendar"
+      class="" style="display:grid; grid-template-columns: repeat(7, 1fr);
   grid-auto-flow: dense;">
       <% day_of_year = get_year_day_from_month(params[:month_id].to_i)%>
       <% day_of_month = 0 %>
@@ -30,6 +36,7 @@
         <% end %>
       <% end %>
     </div>
+    <p hidden id="chrome-variable" data-current-day ="<%= @calendar.current_day %>"></p>
   </div>
   <div class="info-current-day">
     <% if @calendar.user == current_user %>

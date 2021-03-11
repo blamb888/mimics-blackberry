@@ -1,0 +1,68 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="event-modal-<%= day_of_year %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--<div id="calendar_id">73</div>
+            <div id="calendar_day">11</div>-->
+            <!--TODO dropdown of API list of calendars
+            TODO current day-->
+            <div id="header">
+              <h2 id="calendar-name"></h2>
+              <img id="mimic-book" src="images/mimic_book.png" alt="mimic_book">
+            </div>
+            <h3 id="current-date"></h3>
+
+            <form>
+              <!--<div class="form-group row">
+                <label for="day_number" class="col-sm-2 col-form-label">Day of Year:</label>
+                <div class="col-sm-10">
+                  <input type="day_number" class="form-control" id="day_number" placeholder="Day number">
+                </div>
+              </div>-->
+              <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label"><h4>Notes</h4></label>
+                <div class="col-sm-10">
+                  <input type="name" class="form-control" id="name" placeholder="Title">
+                  <input type="hidden" id="category" name="custId" value="Notes">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2"><h4>Private</h4></div>
+                <div class="col-sm-10">
+                  <div id="private-check" class="form-check">
+                    <input class="form-check-input" type="checkbox" id="private">
+                    <label class="form-check-label" for="gridCheck1">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="text" class="col-sm-2 col-form-label"><h4>Content</h4></label>
+                <div class="col-sm-10">
+                  <textarea rows="15" cols="40" type="text" class="form-control" id="rich_description" placeholder="Content">
+                  </textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="submit" id="send-data" class="btn btn-primary"><h4>Submit</h4></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+
+  </body>
+</html>

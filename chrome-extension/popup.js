@@ -22,7 +22,6 @@ function listenClick() {
         const rich_description = document.querySelector('#rich_description').value;
         // const calendar_id = document.querySelector('#calendar_id').value;
 
-        // TODO change url to real url for pitch
         const url = `http://localhost:3000/calendars/${calendar_id}/events`;
         fetch(url, {
           method: 'POST',
