@@ -30,10 +30,12 @@
                   <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
                 </div>
                 <div data-controller="share" data-button-primary-class="btn-primary" style="margin-left: 8px;">
-                  <div class='fas fa-link cursor-pointer' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
+                  <div class="tooltip1">
+                   <div onclick="myFunction()" onmouseout="outFunc()" class='fas fa-link cursor-pointer link-icon' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
+                    <span class="tooltiptext1" id="myTooltip">Copy link to clipboard</span>
+                    </div>
                   </div>
                 </div>
-              </div>
             </h4>
             <% if @calendar.users.any? %>
               <% @calendar.users.each do |user| %>
@@ -46,7 +48,8 @@
             <h4 style="margin-top: 16px; font-size: 19px;"><strong>Current Day</strong></h4>
             <h4 style="font-size: 19px;"><small><em><%= @calendar.event_day_calculation(@calendar.current_day) %></em></small></h4>
             <hr>
-            <a  href="https://app.roll20.net/editor/" add target="_blank" type="button" class="btn btn-primary text-center">Meet in Roll20</a>
+              <a  href="https://app.roll20.net/editor/" add target="_blank" type="button" class="btn btn-primary text-center">Meet in Roll20</a>
+              
           </div>
         </div>
       </div>
@@ -79,3 +82,15 @@
   <br>
   <br>
 </div>
+<script>
+function myFunction() {
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy link to clipboard";
+}
+</script>
