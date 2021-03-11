@@ -31,6 +31,36 @@
       margin-bottom: 24px !important;
     }
   }
+  .background-new {
+    & .delete-button {
+      width: 98%;
+    }
+    & .col-10{
+      max-width: none !important;
+      flex: none !important;
+    }
+    & .month-card-container {
+      margin-left: 0px !important;
+    }
+  }
+  .container-game-info {
+    display: block !important;
+    box-sizing: revert !important;
+  }
+
+  #months-container {
+    display: grid !important;
+    grid-template-columns: auto !important;
+  }
+  fieldset.form-group {
+    flex-wrap: wrap !important;
+    & .form-check {
+      padding-left: 0px !important;
+    }
+  }
+  .modal-title {
+    display: block !important;
+  }
 }
 
   // Small devices (landscape phones, 576px and up)
