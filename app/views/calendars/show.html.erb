@@ -11,21 +11,30 @@
       <div class="col-2">
         <div class="container">
           <div class="card-game-info">
-            <% if @calendar.title != nil  %>
-              <h4 style="display: contents; font-size: 20px;"><strong class="mr-3"><%= @calendar.title %></strong></h4>
-              <%= render 'form_edit_modal' %>
-              <h4 style="font-size: 19px;"><small><em><%= @calendar.description %></em></small></h4>
-            <% else %>
-              <h4 style="display: contents; font-size: 19px;"><strong style="">Add Game Title</strong><%= render 'form_edit_modal' %>
-              <% end %></h4>
-            <hr>
+            <div class="title-info">
+              <% if @calendar.title != nil  %>
+                <h4 style="font-size: 20px; display: flex; justify-content: space-between;"><strong class="mr-3"><%= @calendar.title %></strong><%= render 'form_edit_modal' %></h4>
+                <h4 style="font-size: 19px;"><small><em><%= @calendar.description %></em></small></h4>
+              <% else %>
+                <h4 style="font-size: 20px; display: flex; justify-content: space-between;"><strong style="">Add Game Title</strong><%= render 'form_edit_modal' %>
+                <% end %></h4>
+              <hr>
+            </div>
             <h4 style="margin-top: 18px; font-size: 19px;"><strong class="mr-3">Game Master</strong>
-              <div class="fas fa-user-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal"></div>
-              <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
             </h4>
             <h4 style="font-size: 19px;"><small><em><%= @calendar.user.username %></em></small></h4>
             <hr>
-            <h4 style="margin-top: 16px; font-size: 19px;"><strong>Players</strong></h4>
+            <h4 style="margin-top: 16px; font-size: 19px; display: flex; justify-content: space-between;"><strong>Players</strong>
+              <div class="player-icon-info">
+                <div class="fas fa-user-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal">
+                  <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
+                </div>
+                <div data-controller="share" data-button-primary-class="btn-primary" style="margin-left: 8px;">
+                  <div class='fas fa-link cursor-pointer' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
+                  </div>
+                </div>
+              </div>
+            </h4>
             <% if @calendar.users.any? %>
               <% @calendar.users.each do |user| %>
                 <h4 style="font-size: 19px;"><small><em><%= user.username %></em></small></h4>
@@ -60,11 +69,6 @@
   </div>
   <div class="bottom-buttons-year">
     <div>
-      <div data-controller="share" data-button-primary-class="btn-primary">
-        <button class='btn' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
-          Copy Link
-        </button>
-      </div>
       <%= link_to calendars_path do %>
         <i class="fas fa-chevron-circle-left"></i>
       <% end %>
