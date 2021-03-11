@@ -1,5 +1,5 @@
 function listenClick() {
-  chrome.tabs.query({ title: "MimicsBlackberry" }, function (tabs) { // Finds the tab that is active in the current window
+  chrome.tabs.query({ title: "Mimic's Blackberry - Because you've got enough things to worry about." }, function (tabs) { // Finds the tab that is active in the current window
     console.log(tabs)
     chrome.tabs.sendMessage(tabs[0].id, 'getWhatever', (result) => {
       //popupDisplay
