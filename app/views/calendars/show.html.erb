@@ -27,8 +27,9 @@
             <h4 style="margin-top: 16px; font-size: 19px; display: flex; justify-content: space-between;"><strong>Players</strong>
               <div class="player-icon-info">
                 <div class="fas fa-user-plus cursor-pointer" data-toggle="modal" data-target="#add_user_modal">
-                  <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
                 </div>
+              <%= render 'user_calendars/add_user_modal', day_of_year: @day_of_year %>
+
                 <div data-controller="share" data-button-primary-class="btn-primary" style="margin-left: 8px;">
                   <div class="tooltip1">
                    <div onclick="myFunction()" onmouseout="outFunc()" class='fas fa-link cursor-pointer link-icon' data-share-target='button' data-action='click->share#clicked', data-token="<%=@calendar.token%>">
