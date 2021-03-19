@@ -1,5 +1,5 @@
 meta_product_name: "Mimic's Blackberry"
 meta_title: "Mimic's Blackberry - Save some trees, keep your calendars in our vaults"
 meta_description: "Fantasy calendars hosted online for tabletop RPG players to connect over."
-meta_image: "mimic_book.png" # should exist in `app/assets/images/`
+meta_image: "d&d.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
