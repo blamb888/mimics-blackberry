@@ -11,7 +11,7 @@ class User < ApplicationRecord
   has_many :user_calendars
   has_many :calendars, through: :user_calendars
   has_one_attached :photo
-  validates :username, presence: true
+  # validates :username, presence: true
   def all_calendars
     calendars + calendars_as_owner
   end
